@@ -1,0 +1,541 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: rgba(70, 24, 94, 1); /*#FAFAFA;*/
+	background-attachment: fixed;
+	background-position: left top;  
+	color: white;
+	font-family: 'Source Sans Pro', sans-serif;
+	font-size: 16pt;
+	overflow-x: hidden;
+}
+
+footer {
+	text-align: center;
+	color: #222222;
+	background-color: rgba(255, 255, 255, 0.2);
+	font-size: 0.8em;
+	margin: auto;
+	margin-top: 40px;
+	width: 90%;
+}
+
+header {
+	min-height: 500px;
+	border: 1px;
+	position:relative;
+}
+
+h1 {
+	font-weight: 200;
+	font-size: 1.9em;
+	text-align:center;
+	color:#3D015C
+}
+
+h1:after{
+	content: "";
+	display: block;
+	height: 3px;
+	width: 90%;
+	margin: auto;
+	margin-bottom: 0.2em;
+	background: #3D015C;
+}
+
+h2 {
+	font-weight: 400;
+	font-size: 1.3em;
+	text-align: left;
+	color: #3D015C;
+}
+
+p  {
+	text-indent:50px;
+}
+
+.a {
+	display: inline-block;
+	text-align: left;
+	font-size: 0.9em;
+}
+
+.dates {
+	margin-left: 5.5em;
+	white-space: nowrap;
+}
+
+/* make keyframes that tell the start state and the end state of our object */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-ms-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+ 
+.fade-in {
+	opacity:0;  /* make things invisible upon start */
+	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+    -moz-animation:fadeIn ease-in 1;
+    -ms-animation:fadeIn ease-in 1;
+    -o-animation:fadeIn ease-in 1;
+	animation:fadeIn ease-in 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	-ms-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+	animation-duration:1s;
+}	
+
+.fade-in.one {
+	-webkit-animation-delay: 1.4s;
+	-moz-animation-delay: 1.4s;
+	-ms-animation-delay: 1.4s;
+	-o-animation-delay: 1.4s;
+	animation-delay: 1.4s;
+}
+
+.fade-out {
+	opacity:1;  /* make things invisible upon start */
+	-webkit-animation:fadeOut ease-out 1;  /* call our keyframe named fadeOut, use animattion ease-out and repeat it only 1 time */
+    -moz-animation:fadeOut ease-out 1;
+    -ms-animation:fadeOut ease-out 1;
+    -o-animation:fadeOut ease-out 1;
+	animation:fadeOut ease-out 1;
+ 
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	-ms-animation-fill-mode:forwards;
+	-o-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration:1s;
+	-moz-animation-duration:1s;
+	-ms-animation-duration:1s;
+	-o-animation-duration:1s;
+	animation-duration:1s;
+}	
+
+.faq{
+
+}.box {
+	display: inline-block;
+	width: 26%;
+	margin: 0% 2% 2em 2%;
+	vertical-align: top;
+}
+
+.faq-container {
+	text-align: center;
+	color: black;
+}
+
+.fullwidth {
+	clear: both;
+	width: initial;
+}
+
+.headerBG {
+	z-index: -1;
+	min-height: 500px;
+	background-image: url('../images/BannerWide.png');
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: left top;
+}
+.headerBG:before {  
+    content: "";  
+    display: block;  
+    position: absolute;  
+    top: 0;  
+    bottom: 0;  
+    left: 0;  
+    right: 0;  
+   	background: -webkit-linear-gradient(rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 1)); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 1)); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 1)); /* For Firefox 3.6 to 15 */
+  	background: -ms-linear-gradient(rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 0.40), rgba(70, 24, 94, 1)); /* For Internet Explorer ??? */
+    -moz-transition: background .3s linear;  
+    -webkit-transition: background .3s linear;  
+    -o-transition: background .3s linear;  
+    -ms-transition: background .3s linear;  
+    transition: background .3s linear;  
+}  
+
+.left {
+	float: left;
+	margin: auto;
+	width: 80%;
+}
+
+.logo {
+	display: block;
+	width: 95%;
+	max-width: 800px;
+	height: auto;
+	margin: auto;
+}
+
+.logo-container {
+	text-align: center;
+	position: absolute;
+	top: 20%;
+	width: 100%;
+	font-size: 1.2em;
+	font-weight: bold;
+	white-space: normal;
+}
+
+.main {
+	width: 90%;
+	margin: auto;
+	background-color: white;
+	border: 0px;
+	color: black;
+}
+
+.maincopy {
+	margin-top: 2%;
+	margin-bottom: 2%;
+	margin-left: 3%;
+	margin-right: 3%;
+}
+
+.media-button {
+	width: 64px;
+	height: 64px;
+	margin-left: 10px;
+	opacity: 0.6;
+}
+
+.media-button:hover {
+	opacity: 1;
+}
+
+.navbar {
+	position: fixed;
+	float: left;
+	width: 100%;
+	z-index: 10;
+	background-color: rgba(70, 24, 94, 0.6);
+	-moz-transition: background .3s linear;  
+    -webkit-transition: background .3s linear;  
+    -ms-transition: background .3s linear;  
+    -o-transition: background .3s linear;  
+    transition: background .3s linear;  
+}
+
+.nav.element-left {
+	float: left;
+}
+.nav.element-right {
+	float: right;
+}
+.nav.element-standby {
+	height: 24px;
+	vertical-align: top;
+	margin-left: 0.25em;
+	margin-right: 0.25em;
+}
+.navbutton:not(:first-child):before {
+	content: "";
+	margin-left: 0.25em;
+}
+.navbutton:not(:last-child):after {
+	content: "";
+	margin-right: 0.25em;
+}
+
+
+.place {
+	margin-left: 2.5em;
+	white-space: nowrap;
+}
+
+a:link {
+	color: inherit;
+	text-decoration: none;
+}
+a:visited {
+	color: inherit;
+}
+a:hover {
+	opacity:0.8;
+	text-decoration: underline;
+}
+a:active {
+
+}
+.q {
+	display: inline-block;
+	width: 100%;
+	font-weight: bold;
+	text-align: center;
+	margin-bottom: 0.8em;
+}
+
+
+.right {
+	float: right;
+	margin: auto;
+	width: 20%;
+}
+
+.slogan {
+	display: inline-block;
+	width: 90%;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: white;
+	border-radius: 10px 10px 0px 0px;
+	
+}
+
+.slogan-text{
+	text-align: center;
+	font-size: 2.1em;
+	font-weight: bold;
+	padding: 0px;
+	color: #28003C;
+}
+
+.social {
+	position: absolute;
+	right: 0px;
+	bottom: 60px;
+	text-align: right;
+	vertical-align: middle;
+	padding: 10px;
+}
+.sponsor.box {
+	text-align: center;
+	vertical-align: middle;
+}
+.sponsor.box img{
+	width: 15em;
+}
+
+.standby {
+	display: none;
+	position: absolute;
+	top: 49%;
+	left: 49%;
+}
+
+:target {
+	background-color: rgba(141, 22, 197, 0.07);
+    -webkit-transition: background-color 1000ms ease-in-out;
+    -moz-transition: background-color 1000ms ease-in-out;
+    -o-transition: background-color 1000ms ease-in-out;
+    -ms-transition: background-color 1000ms ease-in-out;
+    transition: background-color 1000ms ease-in-out;
+}
+
+@media (max-width : 1280px) {
+	.headerBG {
+		background-image: url('../images/Banner1280.png');
+	}
+	.box {
+		width: 44%;
+	}
+	
+}
+
+@media (max-width : 1024px) {
+	body {
+    	font-size: 16pt;
+    }
+	.headerBG {
+		background-image: url('../images/Banner1024.png');
+	}
+	.main {
+		width: 90%;
+	}
+	.slogan {
+		width: 90%;
+	}    
+}
+
+@media (max-width : 800px) {
+	.headerBG {
+		background-image: url('../images/Banner800.png');
+	}
+	.blurbleft {
+		display:none;
+	}
+	body {
+    	font-size: 14pt;
+    }
+}
+@media (max-width : 640px) {
+	 body {
+    	font-size: 12pt;
+    }
+    .box {
+		width: 95%;
+	}
+    .dates {
+		margin-left: 0em;
+	}
+	.headerBG {
+		background-image: url('../images/Banner640.png');
+	}
+	.left {
+		float: none;
+		width: 90%;
+	}
+	.main {
+		width: 100%;
+	}
+	.nav.element-right {
+		visibility: hidden;
+		display: none;
+	}
+	.place {
+		margin-left: 0em;
+	}
+	.place:before {
+		content: " · ";
+		white-space: normal;
+	}
+	.right {
+		float: none;
+		width: 90%;
+		text-align: center;
+	}
+	.slogan {
+		width: 100%;
+	}
+	.social {
+		width: 100px;
+		bottom: 70px;
+	}
+}  
+@media (max-width: 480px) {
+	.headerBG {
+		background-image: url('../images/Banner320.png');
+	}
+}
+@media (max-width : 320px) {
+	.headerBG {
+		background-image: url('../images/Banner320.png');
+	}
+	body {
+    	font-size: 12pt;
+    }
+}
+
+/* Google form CSS */
+.ss-question-list {
+	list-style-type:none
+}
+.ss-form-question {
+
+}
+.errorbox-good {
+
+}
+.ss-item {
+	margin: 0.5em;
+}
+.ss-item-required {
+
+}
+.ss-text {
+
+}
+.ss-form-entry {
+	margin-bottom: 0em;
+}
+.ss-form-entry input {
+	vertical-align:middle;
+	margin-left:0;
+	margin-top:0;
+}
+.ss-form-entry select {
+	max-width:100%;
+}
+.ss-q-item-label {
+
+}
+.ss-q-title {
+	display:block;
+	font-size: 0.8em;
+} h2.ss-q-title {
+	margin-top:.83em;
+	margin-bottom:.83em;
+}
+.ss-required-asterisk {
+	color:#c43b1d;
+}
+.ss-q-help {
+	display:block;
+	margin:.1em 0 .25em 0;
+}
+.ss-secondary-text {
+	color:#666;
+}
+.ss-q-short {
+	max-width: 20em;
+	width: 95%;
+}
+.ss-submit-message{
+	font:normal 13px arial,sans-serif;
+	margin-bottom:20px
+}
+.error,.required,.errorbox-bad{
+	border:2px solid
+}
+.error,.required,.errorbox-bad{
+	border-color:#c43b1d
+}
+.required-message,.error-message{
+	color:#c43b1d;
+	display:none;
+	font-size:13px
+}
+.required~.required-message,.error~.error-message{
+	display:block
+}ul.ss-choices.required{
+	margin-left:-3px;
+	margin-top:-3px;
+	padding-left:4px;
+	padding-top:4px
+}
+.docs-offscreen{
+	position:absolute;
+	left:-10000px;
+	top:-10000px
+}
+.errorbox-bad{
+	background-color:#ffe6cc;
+	padding:2px
+}
+.errorheader{
+	color:#c43b1d
+}
+.ss-navigate {
+
+}
+.goog-inline-block {
+	position:relative;
+	display:-moz-inline-box;
+	display:inline-block
+}* html.goog-inline-blocks {
+	display:inline
+}*:first-child+html.goog-inline-blocks {
+	display:inline
+}
