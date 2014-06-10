@@ -63,6 +63,11 @@ p  {
 	font-size: 0.9em;
 }
 
+.container {
+	text-align: center;
+	color: black;
+}
+
 .dates {
 	margin-left: 5.5em;
 	white-space: nowrap;
@@ -132,11 +137,6 @@ p  {
 	width: 26%;
 	margin: 0% 2% 2em 2%;
 	vertical-align: top;
-}
-
-.faq-container {
-	text-align: center;
-	color: black;
 }
 
 .fullwidth {
