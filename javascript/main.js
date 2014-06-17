@@ -30,18 +30,24 @@ $(function() {
 	});
 });
 var poweredOn = true;
+var animatingNow = false;
 $(function() {
 	$('.power').click(function() {
-		if (poweredOn) {
-			$('.everything').fadeOut(400, function() {
-				$('.standby').fadeIn()
-			});
-			poweredOn = false;
-		} else {
-			$('.standby').fadeOut(200, function() {
-				$('.everything').fadeIn();
-			});
-			poweredOn = true;
+		if (!animatingNow) {
+			animatingNow = true;
+			if (poweredOn) {
+				poweredOn = false;
+				$('.everything').fadeOut(400, function() {
+					$('.standby').fadeIn();
+					animatingNow = false;
+				});
+			} else {
+				$('.standby').fadeOut(200, function() {
+					$('.everything').fadeIn();
+					poweredOn = true;
+					animatingNow = false;
+				});	
+			}
 		}
 	})
 })
