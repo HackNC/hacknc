@@ -186,7 +186,6 @@ p  {
 	max-width: 800px;
 	height: auto;
 	margin: auto;
-	
 }
 
 .logo-container {
@@ -256,13 +255,8 @@ p  {
 }
 .navbutton:not(:first-child):before {
 	content: "";
-	margin-left: 0.25em;
+	margin-left: 0.5em;
 }
-.navbutton:not(:last-child):after {
-	content: "";
-	margin-right: 0.25em;
-}
-
 
 .place {
 	margin-left: 2.5em;
@@ -387,6 +381,10 @@ a:active {
 	body {
     	font-size: 14pt;
     }
+    #Spring2014 {
+		visibility: hidden;
+		display: none;
+	}
 }
 @media (max-width : 640px) {
 	 body {
@@ -431,6 +429,7 @@ a:active {
 		width: 100px;
 		bottom: 70px;
 	}
+	
 }  
 @media (max-width: 480px) {
 	.headerBG {
