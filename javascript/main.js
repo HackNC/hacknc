@@ -21,7 +21,7 @@ $(function() {
 			if ($target.length) {
 				$('html,body').animate({
 			        // subtract navbar height;
-			        scrollTop: ($target.offset().top-$('.navbar').height())
+			        scrollTop: ($target.offset().top-$('.nav table').height())
 			    }, 500);
 				$target.fadeOut(100).fadeIn(500);
 				return false;
@@ -52,9 +52,9 @@ $(function() {
 	})
 })
 function setHeaderSize() {
-	$(".header").css("height", $(window).height());
-	$(".headerBG").css("height", $(window).height());
-	$(".headerBG::before").css("height", $(window).height());
+	$("header").css("height", $(window).height());
+	$("header .background").css("height", $(window).height());
+	$("header .background::before").css("height", $(window).height());
 }
 function startTime() {
 	var today=new Date();

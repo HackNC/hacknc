@@ -11,57 +11,90 @@
 		<title>HackNC 2014</title>
 	</head>
 	<body>
+		<span id="home"></span>
 		<div class="everything">
-			<div class="navbar">
-				<span class="nav element-left">
-					&nbsp;&nbsp;
-					<span class="navbutton">
-						<img src="./images/favicon.ico" alt=""/>
-					</span>
-					<span class="navbutton">
-						<b>HackNC</b>
-					</span>
-					<span class="navbutton">
-						<a href="#SignUp">Sign Up</a>
-					</span>
-					<span class="navbutton">
-						<a href="#WhatIs" class="navbutton">About</a>
-					</span>
-					<span class="navbutton">
-						<a href="#Sponsor" class="navbutton">Sponsor</a>
-					</span>
-					<span class="navbutton">
-						<a href="#FAQ" class="navbutton">FAQ</a>
-					</span>
-					<span class="navbutton" id="Spring2014">
-						<a href="./Spring2014/index.html">Spring 2014</a>
-					</span>
-				</span>
-				<span class="nav element-right">
-					<span class="navbutton" id="clock">
-					</span>
-					<span class="navbutton">
-						<a class="power">
-							<img src="./images/standby.png" alt="on/off" class="nav element-standby"/>
-						</a>
-					</span>
-				</span>
+		<!--	Navbar	!-->
+			<div class="nav">
+				<table>
+					<tbody>
+						<tr>
+							<td class="element-left">
+								&nbsp;&nbsp;
+								<span class="button">
+									<img src="./images/favicon.ico" alt="" class="icon"/>
+								</span>
+								<span class="button">
+									<a href="#home"><b>HackNC</b></a>
+								</span>
+								<span class="button">
+									<a href="#SignUp">Sign Up</a>
+								</span>
+								<span class="button">
+									<a href="#WhatIs" class="navbutton">About</a>
+								</span>
+								<span class="button">
+									<a href="#Sponsor" class="navbutton">Sponsor</a>
+								</span>
+								<span class="button">
+									<a href="#FAQ" class="navbutton">FAQ</a>
+								</span>
+								<span class="button" id="Spring2014">
+									<a href="./Spring2014/index.html">Spring 2014</a>
+								</span>
+							</td>
+							<td class="element-right">
+								<span class="button" id="clock">
+								</span>
+								<span class="button">
+									<a class="power">
+										<img src="./images/standby.png" alt="on/off" class="icon"/>
+									</a>
+								</span>
+							</td>
+						</tr>
+					</tbody>
+				</table>
 			</div>
 			<header>
-				<div class="headerBG fade-in one"></div>
-				<div class="logo-container">
-					<span class="dates"><a href="http://en.wikipedia.org/wiki/October_25" target="_blank">October 25-26</a><span class="place"><a href="https://www.google.com/maps/place/Sitterson+Hall/@35.9100095,-79.0533016,17z/data=!3m1!4b1!4m2!3m1!1s0x89acc2e6270ae415:0xc63ad7541cb9e8a1" target="_blank">UNC - Chapel Hill</a></span></span>
-					<img class="logo" src="images/bighk.png" alt="HackNC logo" title="HackNC logo"><br>
+				<!--	background image 	!-->
+				<div class="background fade-in one">
 				</div>
-				<div class="social">
-					<a href="http://facebook.com/HackNC14"><img src="./images/fbcircle.png" class="media-button"alt="HackNC Facebook Page"></a>
-					<a href="http://twitter.com/HackNC14"><img src="./images/twittercircle.png" class="media-button"alt="HackNC Twitter Page"></a>
+				<!-- 	logo	!-->
+				<div class="container">
+					<div class="logo">
+						<span class="text">
+							<span class="dates">
+								<a href="http://en.wikipedia.org/wiki/October_25" target="_blank">
+									October 25-26
+								</a>
+							</span>
+							<span class="place">
+								<a href="https://www.google.com/maps/place/Sitterson+Hall/@35.9100095,-79.0533016,17z/data=!3m1!4b1!4m2!3m1!1s0x89acc2e6270ae415:0xc63ad7541cb9e8a1" target="_blank">
+									UNC - Chapel Hill
+								</a>
+							</span>
+						</span>
+						<img class="image" src="images/bighk.png" alt="HackNC logo" title="HackNC logo"><br>
+					</div>
 				</div>
-				<span class="slogan slogan-text">
+				<!--	social media buttons 	!-->
+				<div class="container">
+					<div class="social">
+						<a href="http://facebook.com/HackNC14">
+							<img src="./images/fbcircle.png" class="image" alt="Facebook" title="Find us on Facebook!">
+						</a>
+						<a href="http://twitter.com/HackNC14">
+							<img src="./images/twittercircle.png" class="image" alt="Twitter" title="Tweet at us too.">
+						</a>
+					</div>
+				</div>
+				<!--	slogan 	!-->
+				<span class="slogan">
 					WELCOME TO HACKER COUNTRY
 				</span>
 			</header>
 			<section class="main">
+				<!--	Google Form copypasta	!-->
 				<div class="right" id="SignUp">
 					<h1 title="Sign up for HackNC. Powered by Google Forms.">Sign up</h1>
 					<form action="https://docs.google.com/forms/d/10IBpBDlN1j8_Q8HXiK8XV9YJks1LTV_RUBdO7QLoIPo/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
@@ -144,62 +177,62 @@
 					<div class="container">
 						<div class="sponsor box">
 							<a href="https://bitpay.com/">
-								<img src="./images/oldSponsors/bitpay.png"/>
+								<img src="./images/oldSponsors/bitpay.png" alt="BitPay"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="http://www.emc.com/">
-								<img src="./images/oldSponsors/emc.png"/>
+								<img src="./images/oldSponsors/emc.png" alt="EMC"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="http://www.google.com/about/">
-								<img src="./images/oldSponsors/google.png"/>
+								<img src="./images/oldSponsors/google.png" alt="Google"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="http://www.redventures.com/">
-								<img src="./images/oldSponsors/redventures.png"/>
+								<img src="./images/oldSponsors/redventures.png" alt="Red Ventures"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="https://getpebble.com/">
-								<img src="./images/oldSponsors/pebble.png"/>
+								<img src="./images/oldSponsors/pebble.png" alt="Pebble"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="http://www.carolinacreates.unc.edu/">
-								<img src="./images/oldSponsors/carolinacreates.png"/>
+								<img src="./images/oldSponsors/carolinacreates.png" alt="Carolina Creates"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="http://www.kitware.com/">
-								<img src="./images/oldSponsors/kitware.png"/>
+								<img src="./images/oldSponsors/kitware.png" alt="Kitware"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="https://www.metlife.com/">
-								<img src="./images/oldSponsors/metlife.png"/>
+								<img src="./images/oldSponsors/metlife.png" alt="MetLife"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="https://www.modolabs.com/">
-								<img src="./images/oldSponsors/modoLabs.png"/>
+								<img src="./images/oldSponsors/modoLabs.png" alt="Modo Labs"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="http://infusion.com/">
-								<img src="./images/oldSponsors/infusion.png"/>
+								<img src="./images/oldSponsors/infusion.png" alt="Infusion"/>
 							</a>
 						</div>
 						<div class="sponsor box">
-							<a href="http:/http://sendgrid.com/">
-								<img src="./images/oldSponsors/sendgrid.png"/>
+							<a href="http://sendgrid.com/">
+								<img src="./images/oldSponsors/sendgrid.png" alt="SendGrid"/>
 							</a>
 						</div>
 						<div class="sponsor box">
 							<a href="http://innovate.unc.edu/">
-								<img src="./images/oldSponsors/innovateAtCarolina.png"/>
+								<img src="./images/oldSponsors/innovateAtCarolina.png" alt="Innovate at Carolina"/>
 							</a>
 						</div>
 					</div>
@@ -252,7 +285,9 @@
 			</footer>
 		</div>
 		<div class="standby">
-			<a class="power"><img src="./images/standby.png" alt="on/off" ></a>
+			<a class="power">
+				<img src="./images/standby.png" alt="on/off" />
+			</a>
 		</div>
 		<script src="./javascript/jquery-1.11.1.min.js"></script>
 		<script src="javascript/main.js"></script>
