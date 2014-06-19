@@ -27,15 +27,19 @@ header {
 	
 	position:relative;
 }
-header .background {
-	z-index: -1;
+.background {
+	float: left;
+	position: fixed;
 	min-height: 500px;
-	background-image: url('../images/BannerWide.png');
+	width: 100%;
+	z-index: -1;
+	-webkit-transform: translateZ(0);
+	background-image: url('../images/Banner1920.png');
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: left top;
 }
-header .background:before {  
+.background:before {  
     content: "";  
     display: block;  
     position: absolute;  
@@ -364,8 +368,14 @@ a:active {
     transition: background-color 1000ms ease-in-out;
 }
 
+@media (max-width : 1600px) {
+	.background {
+		background-image: url('../images/Banner1600.png');
+	}
+}
+
 @media (max-width : 1280px) {
-	.headerBG {
+	.background {
 		background-image: url('../images/Banner1280.png');
 	}
 	.box {
@@ -378,7 +388,7 @@ a:active {
 	body {
     	font-size: 16pt;
     }
-	.headerBG {
+	.background {
 		background-image: url('../images/Banner1024.png');
 	}
 	.main {
@@ -390,7 +400,7 @@ a:active {
 }
 
 @media (max-width : 800px) {
-	.headerBG {
+	.background {
 		background-image: url('../images/Banner800.png');
 	}
 	body {
@@ -409,7 +419,7 @@ a:active {
 		width: 95%;
 	}
     
-	.headerBG {
+	.background {
 		background-image: url('../images/Banner640.png');
 	}
 	.left {
@@ -448,12 +458,12 @@ a:active {
 	}	
 }  
 @media (max-width: 480px) {
-	.headerBG {
+	.background {
 		background-image: url('../images/Banner320.png');
 	}
 }
 @media (max-width : 320px) {
-	.headerBG {
+	.background {
 		background-image: url('../images/Banner320.png');
 	}
 	body {

@@ -53,8 +53,8 @@ $(function() {
 })
 function setHeaderSize() {
 	$("header").css("height", $(window).height());
-	$("header .background").css("height", $(window).height());
-	$("header .background::before").css("height", $(window).height());
+	$(".background").css("height", $(window).height());
+	$(".background::before").css("height", $(window).height());
 }
 function startTime() {
 	var today=new Date();
