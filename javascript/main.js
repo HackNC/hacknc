@@ -1,5 +1,7 @@
 ////////////////// run this after the page has been built //////////////////
+var image = selectRandomBackground();
 setHeaderSize();
+setBackground(image);
 window.addEventListener("resize", function(event) {
 	setHeaderSize();
 });
@@ -29,6 +31,7 @@ $(function() {
 		}
 	});
 });
+
 var poweredOn = true;
 var animatingNow = false;
 $(function() {
@@ -51,11 +54,36 @@ $(function() {
 		}
 	})
 })
+
+function selectRandomBackground() {
+	var images = ['1', '2', '3', '4', '5', '6', '7', '8', '9'];
+	return images[Math.floor(Math.random() * images.length)];
+}
+
 function setHeaderSize() {
 	$("header").css("height", $(window).height());
 	$(".background").css("height", $(window).height());
 	$(".background::before").css("height", $(window).height());
+	$("footer").css("margin-top", $(window).height());
 }
+
+function setBackground(image) {
+	var size = '320';
+	var width = $(window).width();
+	if (width <= 640) {
+		size = '640';
+	} else if (width <= 800) {
+		size = '800';
+	} else if (width <= 1024) {
+		size = '1024';
+	} else if (width <= 1600) {
+		size = '1600';
+	} else {
+		size = '2048';
+	}
+	$('.background').css({'background-image': 'url(./images/' + image + '_' + size + '.jpg)'});
+}
+
 function startTime() {
 	var today=new Date();
 	var day=today.getDay();
@@ -140,6 +168,7 @@ function startTime() {
 		startTime()
 	},1000);
 }
+
 function getAmPm(h) {
 	if (h >= 12) {
 		return "PM";
@@ -147,6 +176,7 @@ function getAmPm(h) {
 		return "AM";
 	}
 }
+
 function fixHours(h) {
 	if (h > 12) {
 		return h - 12;
@@ -156,6 +186,7 @@ function fixHours(h) {
 		return h;
 	}
 }
+
 function fixMinutes(i) {
     if (i<10) {i = "0" + i};  // add zero in front of numbers < 10
     return i;

@@ -4,7 +4,7 @@
 }
 
 body {
-	background-color: rgba(31, 38, 67, 1); /*#FAFAFA;*/
+	background-color: rgba(19, 77, 104, 1); /*#FAFAFA;*/
 	background-position: left top;  
 	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
@@ -34,10 +34,9 @@ header {
 	width: 100%;
 	z-index: -1;
 	-webkit-transform: translateZ(0);
-	background-image: url('../images/Banner1920.png');
 	background-size: cover;
 	background-repeat: no-repeat;
-	background-position: left top;
+	background-position: center;
 }
 .background:before {  
     content: "";  
@@ -47,10 +46,10 @@ header {
     bottom: 0;  
     left: 0;  
     right: 0;  
-   	background: -webkit-linear-gradient(rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 1)); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 1)); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 1)); /* For Firefox 3.6 to 15 */
-  	background: -ms-linear-gradient(rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 0.40), rgba(31, 38, 67, 1)); /* For Internet Explorer ??? */
+   	background: -webkit-linear-gradient(rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 1)); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 1)); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 1)); /* For Firefox 3.6 to 15 */
+  	background: -ms-linear-gradient(rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 1)); /* For Internet Explorer ??? */
     -moz-transition: background .3s linear;  
     -webkit-transition: background .3s linear;  
     -o-transition: background .3s linear;  
@@ -62,7 +61,7 @@ h1 {
 	font-weight: 200;
 	font-size: 1.9em;
 	text-align:center;
-	color: rgba(31, 38, 67, 1);
+	color: rgba(19, 77, 104, 1);
 }
 
 h1:after{
@@ -72,7 +71,7 @@ h1:after{
 	width: 90%;
 	margin: auto;
 	margin-bottom: 0.2em;
-	background: rgba(31, 38, 67, 1);
+	background: rgba(19, 77, 104, 1);
 }
 
 h2 {
@@ -112,7 +111,11 @@ p  {
 	top: 20%;
 	font-size: 1.2em;
 	font-weight: bold;
-	width: 100%
+	width: 100%;
+	-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
+    filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='12' dy='12' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
+    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
+    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
 }
 
 .container .logo .dates {
@@ -248,7 +251,7 @@ p  {
 	width: 100%;
 	z-index: 1;
 	-webkit-transform: translateZ(0);
-	background-color: rgba(255, 255, 255, 0.8);
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.80), rgba(200, 200, 200, 0.80));
 	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
 	font-size: 0.8em;
 	color: black;
@@ -341,22 +344,24 @@ a:active {
 	font-size: 2.1em;
 	font-weight: bold;
 	padding: 0px;
-	color: rgba(31, 38, 67, 1);
+	color: rgba(19, 77, 104, 1);
 }
 
 .sponsor.box {
 	text-align: center;
 	vertical-align: middle;
+	max-width: 15em;
 }
 .sponsor.box img{
-	width: 15em;
+	width: 100%;
 }
 
 .standby {
 	display: none;
 	position: absolute;
-	top: 49%;
-	left: 49%;
+	text-align: center;
+	width: 100%;
+	top: 50%;
 }
 
 :target {
@@ -369,15 +374,11 @@ a:active {
 }
 
 @media (max-width : 1600px) {
-	.background {
-		background-image: url('../images/Banner1600.png');
-	}
+	
 }
 
 @media (max-width : 1280px) {
-	.background {
-		background-image: url('../images/Banner1280.png');
-	}
+	
 	.box {
 		width: 44%;
 	}
@@ -388,9 +389,6 @@ a:active {
 	body {
     	font-size: 16pt;
     }
-	.background {
-		background-image: url('../images/Banner1024.png');
-	}
 	.main {
 		width: 90%;
 	}
@@ -400,9 +398,6 @@ a:active {
 }
 
 @media (max-width : 800px) {
-	.background {
-		background-image: url('../images/Banner800.png');
-	}
 	body {
     	font-size: 14pt;
     }
@@ -412,16 +407,13 @@ a:active {
 	}
 }
 @media (max-width : 640px) {
-	 body {
+	body {
     	font-size: 12pt;
     }
     .box {
-		width: 95%;
+		width: 93%;
 	}
     
-	.background {
-		background-image: url('../images/Banner640.png');
-	}
 	.left {
 		float: none;
 		width: 90%;
@@ -455,17 +447,13 @@ a:active {
 	}
 	.slogan {
 		width: 100%;
-	}	
+	}
 }  
 @media (max-width: 480px) {
-	.background {
-		background-image: url('../images/Banner320.png');
-	}
+	
 }
 @media (max-width : 320px) {
-	.background {
-		background-image: url('../images/Banner320.png');
-	}
+	
 	body {
     	font-size: 12pt;
     }
