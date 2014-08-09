@@ -12,7 +12,7 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 		setLogoSize();
 	});
 	$('.splash > .container').css('display', 'table-cell');
-	$('.splash > .container').addClass('zoomInEntrance').delay(10).queue(function(next) {
+	$('.splash > .container').addClass('zoomInEntrance').queue(function(next) {
 		var image = getBackgroundString(selectRandomBackground()), img = $('<img />');
 		img.bind('load', function() {
 			$('.splash > .container').delay(1000).queue(function(next) {
