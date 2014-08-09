@@ -1,0 +1,100 @@
+.ss-question-list {
+	list-style-type:none
+}
+.ss-form-question {
+
+}
+.errorbox-good {
+
+}
+.ss-item {
+	margin: 0.5em;
+}
+.ss-item-required {
+
+}
+.ss-text {
+
+}
+.ss-form-entry {
+	margin-bottom: 0em;
+}
+.ss-form-entry input {
+	vertical-align:middle;
+	margin-left:0;
+	margin-top:0;
+}
+.ss-form-entry select {
+	max-width:100%;
+}
+.ss-q-item-label {
+
+}
+.ss-q-title {
+	display:block;
+	font-size: 0.8em;
+} h2.ss-q-title {
+	margin-top:.83em;
+	margin-bottom:.83em;
+}
+.ss-required-asterisk {
+	color:#c43b1d;
+}
+.ss-q-help {
+	display:block;
+	margin:.1em 0 .25em 0;
+}
+.ss-secondary-text {
+	color:#666;
+}
+.ss-q-short {
+	max-width: 20em;
+	width: 95%;
+}
+.ss-submit-message{
+	font:normal 13px arial,sans-serif;
+	margin-bottom:20px
+}
+.error,.required,.errorbox-bad{
+	border:2px solid
+}
+.error,.required,.errorbox-bad{
+	border-color:#c43b1d
+}
+.required-message,.error-message{
+	color:#c43b1d;
+	display:none;
+	font-size:13px
+}
+.required~.required-message,.error~.error-message{
+	display:block
+}ul.ss-choices.required{
+	margin-left:-3px;
+	margin-top:-3px;
+	padding-left:4px;
+	padding-top:4px
+}
+.docs-offscreen{
+	position:absolute;
+	left:-10000px;
+	top:-10000px
+}
+.errorbox-bad{
+	background-color:#ffe6cc;
+	padding:2px
+}
+.errorheader{
+	color:#c43b1d
+}
+.ss-navigate {
+
+}
+.goog-inline-block {
+	position:relative;
+	display:-moz-inline-box;
+	display:inline-block
+}* html.goog-inline-blocks {
+	display:inline
+}*:first-child+html.goog-inline-blocks {
+	display:inline
+}

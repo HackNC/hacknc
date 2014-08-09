@@ -4,8 +4,7 @@
 }
 
 body {
-	background-color: rgba(19, 77, 104, 1); /*#FAFAFA;*/
-	background-position: left top;  
+	background-color: #005972;
 	color: white;
 	font-family: 'Source Sans Pro', sans-serif;
 	font-size: 16pt;
@@ -24,44 +23,14 @@ footer {
 
 header {
 	min-height: 500px;
-	
 	position:relative;
 }
-.background {
-	float: left;
-	position: fixed;
-	min-height: 500px;
-	width: 100%;
-	z-index: -1;
-	-webkit-transform: translateZ(0);
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center 30%;
-}
-.background:before {  
-    content: "";  
-    display: block;  
-    position: absolute;  
-    top: 0;  
-    bottom: 0;  
-    left: 0;  
-    right: 0;  
-   	background: -webkit-linear-gradient(rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 1)); /* For Safari 5.1 to 6.0 */
-  	background: -o-linear-gradient(rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 1)); /* For Opera 11.1 to 12.0 */
-  	background: -moz-linear-gradient(rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 1)); /* For Firefox 3.6 to 15 */
-  	background: -ms-linear-gradient(rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 0.30), rgba(19, 77, 104, 1)); /* For Internet Explorer ??? */
-    -moz-transition: background .3s linear;  
-    -webkit-transition: background .3s linear;  
-    -o-transition: background .3s linear;  
-    -ms-transition: background .3s linear;  
-    transition: background .3s linear;  
-} 
 
 h1 {
 	font-weight: 200;
 	font-size: 1.9em;
 	text-align:center;
-	color: rgba(19, 77, 104, 1);
+	color: #E04946;
 }
 
 h1:after{
@@ -71,14 +40,14 @@ h1:after{
 	width: 90%;
 	margin: auto;
 	margin-bottom: 0.2em;
-	background: rgba(19, 77, 104, 1);
+	background: #005972;
 }
 
 h2 {
 	font-weight: 400;
 	font-size: 1.3em;
 	text-align: left;
-	color: rgba(19, 77, 104, 1);
+	color: #005972;
 }
 
 p  {
@@ -98,127 +67,22 @@ p  {
 	padding-left: 5px;
 	padding-right: 5px;
 	vertical-align: top;
+	text-align: center;
+	vertical-align: middle;
+}
+
+.box img{
+	width: 100%;
+}
+
+.box.sponsor {
+	max-width: 15em;
 }
 
 .container {
 	text-align: center;
 	color: black;
 }
-
-.container .logo {
-	text-align: center;
-	position: absolute;
-	top: 20%;
-	font-size: 1.2em;
-	font-weight: bold;
-	width: 100%;
-	-webkit-filter: drop-shadow(12px 12px 25px rgba(0,0,0,0.5));
-    filter: url("data:image/svg+xml;utf8,<svg height='0' xmlns='http://www.w3.org/2000/svg'><filter id='drop-shadow'><feGaussianBlur in='SourceAlpha' stdDeviation='4'/><feOffset dx='12' dy='12' result='offsetblur'/><feFlood flood-color='rgba(0,0,0,0.5)'/><feComposite in2='offsetblur' operator='in'/><feMerge><feMergeNode/><feMergeNode in='SourceGraphic'/></feMerge></filter></svg>#drop-shadow");
-    -ms-filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-    filter: "progid:DXImageTransform.Microsoft.Dropshadow(OffX=12, OffY=12, Color='#444')";
-  	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.container .logo .dates {
-	margin-left: 7em;
-	white-space: nowrap;
-}
-
-.container .logo .image {
-	display: block;
-	width: 95%;
-	max-width: 800px;
-	height: auto;
-	margin: auto;
-}
-
-.container .logo .place {
-	margin-left: 5em;
-	white-space: nowrap;
-}
-
-.container .logo .text {
-	color: white;
-}
-
-.container .social {
-	position: absolute;
-	right: 0px;
-	bottom: 60px;
-	padding: 10px;
-}
-
-.container .social .image {
-	width: 64px;
-	height: 64px;
-	margin-left: 10px;
-	opacity: 0.6;
-}:hover {
-	opacity: 1;
-}
-
-
-/* make keyframes that tell the start state and the end state of our object */
-@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-o-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@-ms-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
-@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
- 
-.fade-in {
-	opacity:0;  /* make things invisible upon start */
-	-webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
-    -moz-animation:fadeIn ease-in 1;
-    -ms-animation:fadeIn ease-in 1;
-    -o-animation:fadeIn ease-in 1;
-	animation:fadeIn ease-in 1;
- 
-	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	-moz-animation-fill-mode:forwards;
-	-ms-animation-fill-mode:forwards;
-	-o-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	-ms-animation-duration:1s;
-	-o-animation-duration:1s;
-	animation-duration:1s;
-}	
-
-.fade-in.one {
-	-webkit-animation-delay: 1.4s;
-	-moz-animation-delay: 1.4s;
-	-ms-animation-delay: 1.4s;
-	-o-animation-delay: 1.4s;
-	animation-delay: 1.4s;
-}
-
-.fade-out {
-	opacity:1;  /* make things invisible upon start */
-	-webkit-animation:fadeOut ease-out 1;  /* call our keyframe named fadeOut, use animattion ease-out and repeat it only 1 time */
-    -moz-animation:fadeOut ease-out 1;
-    -ms-animation:fadeOut ease-out 1;
-    -o-animation:fadeOut ease-out 1;
-	animation:fadeOut ease-out 1;
- 
-	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
-	-moz-animation-fill-mode:forwards;
-	-ms-animation-fill-mode:forwards;
-	-o-animation-fill-mode:forwards;
-	animation-fill-mode:forwards;
-
-	-webkit-animation-duration:1s;
-	-moz-animation-duration:1s;
-	-ms-animation-duration:1s;
-	-o-animation-duration:1s;
-	animation-duration:1s;
-}	
 
 .faq{
 
@@ -229,11 +93,7 @@ p  {
 	width: initial;
 }
 
-.left {
-	float: left;
-	margin: auto;
-	width: 80%;
-}
+
 
 .main {
 	width: 90%;
@@ -243,78 +103,24 @@ p  {
 	color: black;
 }
 
+.main .left {
+	float: left;
+	margin: auto;
+	width: 80%;
+}
+
+.main .right {
+	float: right;
+	margin: auto;
+	width: 20%;
+}
+
 .maincopy {
 	margin-top: 2%;
 	margin-bottom: 2%;
 	margin-left: 3%;
 	margin-right: 3%;
 }
-
-.nav table{
-	position:fixed;
-	float: left;
-	height: auto;
-	width: 100%;
-	z-index: 1;
-	-webkit-transform: translateZ(0);
-	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.80), rgba(200, 200, 200, 0.80));
-	background: -o-linear-gradient(rgba(255, 255, 255, 0.80), rgba(200, 200, 200, 0.80));
-  	background: -moz-linear-gradient(rgba(255, 255, 255, 0.80), rgba(200, 200, 200, 0.80));
-  	background: -ms-linear-gradient(rgba(255, 255, 255, 0.80), rgba(200, 200, 200, 0.80));
-	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
-	font-size: 0.8em;
-	color: black;
-	-webkit-box-shadow: 0px 0px 10px 0px black;
- 	-moz-box-shadow: 0px 0px 10px 0px black;
-  	box-shadow: 0px 0px 10px 0px black;
-  	-webkit-touch-callout: none;
-	-webkit-user-select: none;
-	-khtml-user-select: none;
-	-moz-user-select: none;
-	-ms-user-select: none;
-	user-select: none;
-}
-
-.nav tbody {
-	height: auto;
-	width: 100%;
-}
-
-.nav tr {
-	height: auto;
-	width: 100%;
-}
-
-.nav .button {
-	padding: .25em;
-	height:auto;
-}
-
-.nav td.element-left {
-	padding: 1px;
-	height: auto;
-	vertical-align: middle;
-}
-.nav td.element-right {
-	padding: 1px;
-	height: auto;
-	vertical-align: middle;
-	text-align: right;
-}
-.nav .icon {
-	max-height: 1em;
-	position: relative;
-	top: 2px;
-}
-
-
-/*
-.nav .button:not(:first-child):before {
-	content: "";
-	margin-left: 0.5em;
-}
-*/
-
 
 a:link {
 	color: inherit;
@@ -338,13 +144,6 @@ a:active {
 	margin-bottom: 0.8em;
 }
 
-
-.right {
-	float: right;
-	margin: auto;
-	width: 20%;
-}
-
 .slogan {
 	width: 90%;
 	position: absolute;
@@ -359,24 +158,7 @@ a:active {
 	font-size: 2.1em;
 	font-weight: bold;
 	padding: 0px;
-	color: rgba(19, 77, 104, 1);
-}
-
-.sponsor.box {
-	text-align: center;
-	vertical-align: middle;
-	max-width: 15em;
-}
-.sponsor.box img{
-	width: 100%;
-}
-
-.standby {
-	display: none;
-	position: absolute;
-	text-align: center;
-	width: 100%;
-	top: 50%;
+	color: #005972;
 }
 
 :target {
@@ -388,16 +170,13 @@ a:active {
     transition: background-color 1000ms ease-in-out;
 }
 
-@media (max-width : 1600px) {
-	
-}
-
 @media (max-width : 1280px) {
-	
-	.box {
+	.box.sponsor {
 		width: 44%;
 	}
-	
+	.box.faq {
+		width: 44%;
+	}
 }
 
 @media (max-width : 1024px) {
@@ -409,53 +188,33 @@ a:active {
 	}
 	.slogan {
 		width: 90%;
-	}    
+	}
 }
 
 @media (max-width : 800px) {
 	body {
     	font-size: 14pt;
     }
-    #Spring2014 {
-		visibility: hidden;
-		display: none;
-	}
 }
+
 @media (max-width : 640px) {
 	body {
     	font-size: 12pt;
     }
-    .box {
+    .box.sponsor {
 		width: 93%;
 	}
-    
-	.left {
+	.box.faq {
+		width: 93%;
+	}
+	.main .left {
 		float: none;
 		width: 90%;
-	}
-	.container .logo .dates {
-		margin-left: 0em;
-	}
-	.container .logo .place {
-		margin-left: 0em;
-	}
-	.container .logo .place:before {
-		content: " · ";
-		white-space: normal;
-	}
-	.container .social {
-		width: 100px;
-		bottom: 100px;
-
 	}
 	.main {
 		width: 100%;
 	}
-	.nav .element-right {
-		visibility: hidden;
-		display: none;
-	}
-	.right {
+	.main .right {
 		float: none;
 		width: 90%;
 		text-align: center;
@@ -463,115 +222,4 @@ a:active {
 	.slogan {
 		width: 100%;
 	}
-}  
-@media (max-width: 480px) {
-	
-}
-@media (max-width : 320px) {
-	
-	body {
-    	font-size: 12pt;
-    }
-}
-
-/* Google form CSS */
-.ss-question-list {
-	list-style-type:none
-}
-.ss-form-question {
-
-}
-.errorbox-good {
-
-}
-.ss-item {
-	margin: 0.5em;
-}
-.ss-item-required {
-
-}
-.ss-text {
-
-}
-.ss-form-entry {
-	margin-bottom: 0em;
-}
-.ss-form-entry input {
-	vertical-align:middle;
-	margin-left:0;
-	margin-top:0;
-}
-.ss-form-entry select {
-	max-width:100%;
-}
-.ss-q-item-label {
-
-}
-.ss-q-title {
-	display:block;
-	font-size: 0.8em;
-} h2.ss-q-title {
-	margin-top:.83em;
-	margin-bottom:.83em;
-}
-.ss-required-asterisk {
-	color:#c43b1d;
-}
-.ss-q-help {
-	display:block;
-	margin:.1em 0 .25em 0;
-}
-.ss-secondary-text {
-	color:#666;
-}
-.ss-q-short {
-	max-width: 20em;
-	width: 95%;
-}
-.ss-submit-message{
-	font:normal 13px arial,sans-serif;
-	margin-bottom:20px
-}
-.error,.required,.errorbox-bad{
-	border:2px solid
-}
-.error,.required,.errorbox-bad{
-	border-color:#c43b1d
-}
-.required-message,.error-message{
-	color:#c43b1d;
-	display:none;
-	font-size:13px
-}
-.required~.required-message,.error~.error-message{
-	display:block
-}ul.ss-choices.required{
-	margin-left:-3px;
-	margin-top:-3px;
-	padding-left:4px;
-	padding-top:4px
-}
-.docs-offscreen{
-	position:absolute;
-	left:-10000px;
-	top:-10000px
-}
-.errorbox-bad{
-	background-color:#ffe6cc;
-	padding:2px
-}
-.errorheader{
-	color:#c43b1d
-}
-.ss-navigate {
-
-}
-.goog-inline-block {
-	position:relative;
-	display:-moz-inline-box;
-	display:inline-block
-}* html.goog-inline-blocks {
-	display:inline
-}*:first-child+html.goog-inline-blocks {
-	display:inline
 }

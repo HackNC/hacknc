@@ -1,0 +1,197 @@
+ .standby {
+ 	display: none;
+ 	float: left;
+ 	position: fixed;
+	min-height: 600px;
+	width: 100%;
+	top: 0;
+	bottom: 0;
+	z-index: 99999;
+	background-color: inherit;
+}
+
+.standby > div {
+  	position: absolute;
+ 	text-align: center;
+ 	width: 100%;
+ 	top: 50%;
+}
+
+.toolbar {
+	background: -webkit-linear-gradient(rgba(255, 255, 255, 0.80), rgba(200, 200, 200, 0.80));
+	background: -o-linear-gradient(rgba(255, 255, 255, 0.80), rgba(200, 200, 200, 0.80));
+	background: -moz-linear-gradient(rgba(255, 255, 255, 0.80), rgba(200, 200, 200, 0.80));
+	background: -ms-linear-gradient(rgba(255, 255, 255, 0.80), rgba(200, 200, 200, 0.80));
+	font-family: "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Verdana, sans-serif;
+	font-size: 12pt;
+	color: black;
+	cursor: default;
+}
+
+.toolbar a {
+	display: block;
+	width: 100%;
+	color: black;
+	text-decoration: none;
+}
+
+.toolbar li {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.toolbar > table{
+	position:fixed;
+	float: left;
+	height: auto;
+	width: 100%;
+	z-index: 3;
+	background: inherit;
+	font-family: inherit;
+	font-size: inherit;
+	color: inherit;
+	border-spacing: 0;
+}
+
+.toolbar > table > tbody {
+	height: auto;
+	width: 100%;
+}
+
+.toolbar > table > tbody > tr > td.element-left {
+}
+
+.toolbar > table > tbody > tr > td.element-left ul.topmenu {
+	float:left;
+}
+
+.toolbar > table > tbody > tr > td.element-left > ul.topmenu > li:first-child {
+	margin-left: 10px;
+}
+
+.toolbar > table > tbody > tr > td.element-right {
+	text-align: right;
+}
+
+.toolbar > table > tbody > tr > td.element-right ul.topmenu {
+	float: right;
+}
+
+.toolbar > table > tbody > tr > td.element-right > ul.topmenu > li:last-child {
+	margin-right: 10px;
+}
+
+.toolbar > table > tbody > tr {
+	height: auto;
+	width: 100%;
+	vertical-align: middle;
+}
+
+.toolbar > table > tbody > tr > td > ul.topmenu {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.toolbar> table > tbody > tr > td > ul.topmenu li {
+	display: block;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: left;
+	position: relative; /*--Declare X and Y axis base for sub navigation--*/
+	text-decoration: none;
+}
+
+.toolbar > table > tbody > tr > td > ul.topmenu li span { /*--Drop down trigger styles--*/
+	width: 17px;
+	height: 35px;
+	float: left;
+}
+
+.toolbar > table > tbody > tr > td > ul.topmenu li ul.submenu {
+	background: rgba(215, 215, 215, 0.70);
+	list-style: none;
+	position: absolute; /*--Important - Keeps submenu from affecting main navigation flow--*/
+	left: 0; top: 35px;
+	margin: 0; padding: 0;
+	display: none;
+	float: left;
+	border-radius: 0px 0px 5px 5px;
+	text-align: left;
+}
+
+.toolbar > table > tbody > tr > td > ul.topmenu li ul.submenu li{
+	float: left;
+	width: 170px;
+	margin: 0; padding: 0;
+	clear: both;
+	text-indent: 20px;
+}
+
+.toolbar > table > tbody > tr > td > ul.topmenu li ul.submenu li:last-child:hover {
+	border-radius: 0px 0px 5px 5px;
+}
+
+.toolbar > table > tbody > tr > td > ul.topmenu li ul.submenu li.calendar {
+	width: auto;
+	text-indent: 0px;
+	font-size: 9pt;
+	text-align: center;
+}
+
+.toolbar > table > tbody > tr > td > ul.topmenu li ul.submenu li.calendar td {
+	border-collapse: collapse;
+	border: 1px solid black;
+	min-width: 25px;
+}
+
+
+.calendar .today {
+	background: rgba(255, 231, 140, 0.80);
+}
+
+.toolbar .icon {
+	top: 1px;
+	max-height: 1em;
+	position: relative;
+}
+
+.toolbar .notificationCenter {
+	display: none;
+	top: 35px;
+	position: fixed;
+	right: -250px;
+	z-index: 2;
+	width: 250px;
+	height: 300px;
+}
+
+.toolbar .open {
+	background: #E04946;
+}
+
+.toolbar .shadow {
+	-webkit-filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.5));
+	filter: url(shadow.svg#drop-shadow);
+	-ms-filter: progid:DXImageTransform.Microsoft.Shadow(OffX=6, OffY=6, Color='#444');
+	filter: progid:DXImageTransform.Microsoft.Shadow(OffX=6, OffY=6, Color='#444');
+}
+
+@media (max-width : 640px) {
+	.toolbar .element-right {
+		visibility: hidden;
+		display: none;
+	}
+}
+
+@media (max-width: 380px) {
+	.toolbar .element-left > ul > li:last-child {
+		display: none;
+	}
+}
