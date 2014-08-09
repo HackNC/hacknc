@@ -2,7 +2,7 @@
 if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
 	// mobile
 	setLogoSize();
-	setBackground(selectRandomBackground());
+	$('.background').css('background-image', 'url(' + getBackgroundString(selectRandomBackground()) + ')');
 	$('.splash > .container').css('display', 'table-cell');
 	$('.splash').delay(1000).fadeOut(500);
 } else {
