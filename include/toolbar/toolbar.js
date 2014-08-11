@@ -179,12 +179,12 @@ Menu.prototype = {
 			}
 		});
 
-		$('.osInfo').click(function() {
-			if ($('.osInfo').is(':visible')) {
-				$('.osInfo').hide();
+		$('.osInfo').click(function(e) {
+			if (e.target === this) {
+				if ($(this).is(':visible')) {
+					$(this).hide();
+				}
 			}
-		}).children().click(function() {
-			return false;
 		});
 	}
 }
