@@ -186,6 +186,26 @@ Menu.prototype = {
 				}
 			}
 		});
+
+		var isDoge = false;
+		$('#dogeify').click(function() {
+			if (isDoge) {
+				$('body').css('font-family', '');
+				$('.toolbar').css('font-family', '');
+				$('#dogeify').delay(100).queue(function(next) {
+					$(this).text('Doge');
+					next();
+				});
+			} else {
+				$('body').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
+				$('.toolbar').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
+				$('#dogeify').delay(100).queue(function(next) {
+					$(this).text('Normal');
+					next();
+				});
+			}
+			isDoge = !isDoge;
+		});
 	}
 }
 
@@ -425,7 +445,7 @@ Battery.prototype = {
 		var imgs = [];
 		for (var i=0; i <= maxCharge; i++) {
 			imgs[i] = new Image();
-			imgs[i].src = './include/toolbar/images/battery_' + i + '.png';
+			imgs[i].src = './images/toolbar/battery_' + i + '.png';
 		}
 		var i = 0;
 		window.setInterval(function() {

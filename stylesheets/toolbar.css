@@ -2,7 +2,6 @@
 	display: none;
  	float: left;
  	position: fixed;
-	min-height: 600px;
 	width: 100%;
 	top: 0;
 	bottom: 0;
@@ -21,7 +20,7 @@
 	background: rgba(255, 255, 255, 0.8);
 	color: black;
 	display: block;
-	height: 164px;
+	height: 170px;
 	margin: auto;
 	overflow: auto;
 
@@ -35,7 +34,7 @@
 	padding: 10px;
 
 	width: 50%;
-
+	max-width: 400px;
 }
 
 .osInfo > div > ul {
