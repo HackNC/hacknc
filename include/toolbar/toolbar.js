@@ -170,6 +170,22 @@ Menu.prototype = {
 				}
 			});
 		});
+
+		$('#osInfoLink').click(function() {
+			if ($('.osInfo').is(':visible')) {
+				$('.osInfo').hide();
+			} else {
+				$('.osInfo').show();
+			}
+		});
+
+		$('.osInfo').click(function() {
+			if ($('.osInfo').is(':visible')) {
+				$('.osInfo').hide();
+			}
+		}).children().click(function() {
+			return false;
+		});
 	}
 }
 
