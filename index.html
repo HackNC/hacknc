@@ -55,7 +55,9 @@
 				<h3>HackNC OS 2.0</h3>
 				<ul>
 					<li>
-						<img src='./favicon.ico'/>
+						<a href="./images/logo/logo.svg">
+							<img src='./favicon.ico'/>
+						</a>
 					</li>
 					<li>
 						Download HackNC OS <a href="https://github.com/HackNC/Fall2014/tree/gh-pages">here</a>
@@ -209,7 +211,7 @@
 										</li>
 									</ul>
 								</li>
-								<li id="notificationCenter">
+								<li id="notificationCenter" title="Notification Center">
 									<img src="./images/toolbar/hamburgericon.png" alt="notification center" class="icon"/>
 								</li>
 								<li>
@@ -233,47 +235,185 @@
 		<header>
 			<!--	icons	-->
 			<link rel="stylesheet" type="text/css" href="./stylesheets/desktopIcons.css" media="screen" />
-			<div class="desktopIcons shadow">
-				<div class="icon">
-					<a href="#signUp">
-						<img src="./images/icons/signUp.png" alt="Sign Up"/>
-						Sign up
-					</a>
+			<div class="popup" id="pizza">
+				<div>
+					<h3>Hungry?</h3>
+					<p><a href='mailto:food@hacknc.us?subject=We are hungry&body=I am in room [null]%0A%0APlease deliver the following for me and the people around me:%0A(Item: Quantity)%0AChips: 0%0AEnergy bar: 0%0Whole pizza: 0%0A%0ANotes: '>Click here</a> and we'll deliver a snack in no time</p>
 				</div>
-				<div class="icon">
-					<a href="#about">
-						<img src="./images/icons/about.png" alt="About"/>
-						About
-					</a>
+			</div>
+			<div class="popup" id="mentors">
+				<div>
+					<h3>Need help from a mentor?</h3>
+					<p><a href='mailto:mentors@hacknc.us?subject=We need help&body=I am in room [null]%0A%0AWe are working on [null]%0AWe need help with [null]'>Click here</a> and one of our mentors will meet with you ASAP.</p>
 				</div>
-				<div class="icon">
-					<a href="#sponsors">
-						<img src="./images/icons/sponsor.png" alt="Sponsors"/>
-						Sponsor
-					</a>
+			</div>
+			<div class="popup" id="schedule">
+				<div>
+					<h3>HackNC tentative schedule</h3>
+					<table>
+						<tbody>
+							<tr>
+								<td>11:00 am</td><td>HackNC begins!</td>
+							</tr>
+							<tr>
+								<td>12:00 pm</td><td>Lunch with sponsors</td>
+							</tr>
+							<tr>
+								<td>1:00 pm</td><td>Opening ceremony</td>
+							</tr>
+							<tr>
+								<td>2:00 pm</td><td>Hacking begins</td>
+							</tr>
+							<tr>
+								<td></td><td>Tech talk</td>
+							</tr>
+							<tr>
+								<td>4:00 pm</td><td>Tech talk</td>
+							</tr>
+							<tr>
+								<td>6:00 pm</td><td>Dinner</td>
+							</tr>
+							<tr>
+								<td></td><td>Tech talk</td>
+							</tr>
+							<tr>
+								<td>8:00 pm</td><td>Tech talk</td>
+							</tr>
+							<tr>
+								<td>12:00 pm</td><td>Midnight snack</td>
+							</tr>
+							<tr>
+								<td>8:00 am</td><td>Breakfast</td>
+							</tr>
+							<tr>
+								<td>12:00 pm</td><td>Lunch</td>
+							</tr>
+							<tr>
+								<td></td><td>Expo</td>
+							</tr>
+							<tr>
+								<td>2:00 pm</td><td>Closing ceremony</td>
+							</tr>
+							<tr>
+								<td>4:00 pm</td><td>Time to go... :(</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
-				<div class="icon">
-					<a href="#faq">
-						<img src="./images/icons/faq.png" alt="FAQ"/>
-						FAQ
-					</a>
+			</div>
+			<div class="popup" id="prizes">
+				<div>
+					<h3>List of prizes</h3>
+					<ul>
+						<li>TBA... ;)</li>
+					</ul>
 				</div>
-				<div class="icon">
-					<a href="http://facebook.com/HackNC14">
-						<img src="./images/icons/fbcircle.png" class="image" alt="Facebook" title="Find us on Facebook!">
-						Facebook
+			</div>
+			<div class="popup" id="map">
+				<div>
+					<h3>Area maps</h3>
+					<div>
+					</div>
+					<a href='./images/maps/sitterson_level_0.jpg'>
+						<img src='./images/maps/sitterson_level_0.jpg' alt='Sitterson level 0'/>
 					</a>
-				</div>
-				<div class="icon">
-					<a href="http://twitter.com/HackNC14">
-						<img src="./images/icons/twittercircle.png" class="image" alt="Twitter" title="Tweet at us too.">
-						Twitter
+					<a href='./images/maps/sitterson_level_1.jpg'>
+						<img src='./images/maps/sitterson_level_1.jpg' alt='Sitterson level 1'/>
 					</a>
 				</div>
 			</div>
+			<div class="popup" id="wifi">
+				<div>
+					<h3>Connecting to the Internet</h3>
+					<em>Adapted from <a href='http://www.cs.unc.edu/cms/help/help-articles/connecting-to-the-wireless-network/?searchterm=network%20connecting'>cs.unc.edu</a></em>
+					<p>To use the network, register the MAC address of your device with the HackNC organizers during the event.</p>
+					<h4>UNC-SECURE</h4>
+					<p>UNC-Secure is the primary wireless network, <a class="external-link" href="http://help.unc.edu/CCM3_008509">configuration instructions</a> are provided by ITS.</p>
+					<h4>UNC-PSK</h4>
+					<p>UNC-PSK is available if for whatever reason you cannot use UNC-SECURE, it uses a shared secret key instead of a certificate.  Ask an organizer for the password if you are unable to connect to UNC-SECURE.</p>
+					<h4>UNC-Guest</h4>
+					<p>This is the public "guest" network, requiring no password.  Access on this network is limited to web and a few other protocols, and to the internet outside the unc.edu domain.</p>
+					<h4>Ethernet</h4>
+					<p>This is the simplest, and fastest, option for anyone who doesn't want to worry about passwords.  Note that you must still register your MAC address.</p>
+				</div>
+			</div>
+			<div class="desktopIcons shadow">
+				<a href="#signUp">
+					<div class="icon"title="Hack with us!"/>
+						<img src="./images/icons/signUp.png" alt="Sign Up" >
+						Sign up
+					</div>
+				</a>
+				<a href="#about">
+					<div class="icon" title="Learn about us"/>
+						<img src="./images/icons/about.png" alt="About" >
+						About
+					</div>
+				</a>
+				<a href="#sponsors">
+					<div class="icon" title="Support us"/>
+						<img src="./images/icons/sponsor.png" alt="Sponsors" >
+						Sponsor
+					</div>
+				</a>
+				<a href="#faq">
+					<div class="icon" title="Will there be food?"/>
+						<img src="./images/icons/faq.png" alt="FAQ" >
+						FAQ
+					</div>
+				</a>
+				<a href="http://facebook.com/HackNC14">
+					<div class="icon" title="Find us on Facebook!"/>
+						<img src="./images/icons/fbcircle.png" class="image" alt="Facebook" >
+						Facebook
+					</div>
+				</a>
+				<a href="http://twitter.com/HackNC14">
+					<div class="icon" title="Tweet at us too."/>
+						<img src="./images/icons/twittercircle.png" class="image" alt="Twitter" >
+						Twitter
+					</div>
+				</a>
+				<a href="#" id="pizzaLink">
+					<div class="icon" title="Get unHungry"/>
+						<img src="./images/icons/pizza.png" class="image" alt="Pizza" >
+						Snack
+					</div>
+				</a>
+				<a href="#" id="mentorsLink">
+					<div class="icon" title="Get help"/>
+						<img src="./images/icons/mentors.png" class="image" alt="Mentors" >
+						Help
+					</div>
+				</a>
+				<a href="#" id="scheduleLink">
+					<div class="icon" title="When are things happening?"/>
+						<img src="./images/icons/schedule.png" class="image" alt="Schedule" >
+						Schedule
+					</div>
+				</a>
+				<a href="#" id="prizesLink">
+					<div class="icon" title="What can I win?"/>
+						<img src="./images/icons/prizes.png" class="image" alt="Prizes" >
+						Prizes
+					</div>
+				</a>
+				<a href="#" id="mapLink">
+					<div class="icon" title="Where are things happening?"/>
+						<img src="./images/icons/map.png" class="image" alt="Map" >
+						Map
+					</div>
+				</a>
+				<a href="#" id="wifiLink">
+					<div class="icon" title="How can I get on the internet?"/>
+						<img src="./images/icons/wifi.png" class="image" alt="Map" >
+						Internet
+					</div>
+				</a>
+			</div>
 			<script src="./javascript/desktopIcons.js"></script>
 			<!--	/icons 	-->
-			<span class="slogan" style="z-index: 1;">
+			<span class="slogan" title="We're glad you're here!">
 				WELCOME TO HACKER COUNTRY
 			</span>
 		</header>
@@ -353,7 +493,7 @@
 				</form>
 			</div>
 			<div class="left" id="about">
-				<h1>What is HackNC?</h1>
+				<h1 title="The question you've all been asking">What is HackNC?</h1>
 				<div class="maincopy">
 					<p>HackNC is a hackathon for university students to create big things in a small amount of time - 24 hours between October 25th and 26th.  Your skill as a programmer, team member, and planner will be tested as you work to create anything from websites, to apps, to games, to hardware.  Along the way you will have access to food, internet, swag, mentors, and anything else you need to succeed.  In the end, the best projects will be awarded prizes!</p>
 					<p>If you are looking for something different from the typical hackathon, HackNC has something for you too.  Throughout the entire event there will be hands-on demos, lectures, and tutorials from sponsors, professionals, and professors that range from introductory concepts to the latest groundbreaking research.  And unlike most other hackathons, HackNC is not only for advanced programmers at the university level.  If you are a high school student, college student, or local professional who is interested in learning all the ints and outs of computer science, the introductory lessons are for you.</p>
@@ -361,10 +501,10 @@
 				</div>
 			</div>
 			<div class="fullwidth maincopy" id="sponsors">
-				<h1>Sponsors</h1>
-				<h2>Fall 2014</h2>
-				<p>Interested in sponsoring this event? <a href="mailto:contact@hacknc.us">Contact us!</a></p>
-				<h2>Previous sponsors</h2>
+				<h1 title=":3">Sponsors</h1>
+				<h2 title="Thanks for helping us out!">Fall 2014</h2>
+				<p>Interested in sponsoring this event? <a href="mailto:sponsors@hacknc.us?subject=Sponsorship&body=Hello,%0A%0D%0AWe are interested in learning more about HackNC.  Can you send us information?">Contact us!</a></p>
+				<h2 title="We are eternally grateful">Previous sponsors</h2>
 				<div class="container">
 					<div class="sponsor box">
 						<a href="https://bitpay.com/">
@@ -429,7 +569,7 @@
 				</div>
 			</div>
 			<div class="fullwidth" id="faq">
-				<h1>FAQs</h1>
+				<h1 title="I'm really only worried about the food">FAQs</h1>
 				<div class="container">
 					<div class="faq box">
 						<span class="q">Can I attend?</span>
@@ -478,7 +618,7 @@
 				</div>
 			</div>
 		</section>
-		<footer>
+		<footer title="Wow, you made it to the bottom.">
 			<em>Copyright &copy; 2014 HackNC Team</em>
 			<br>
 			<a href="https://github.com/HackNC/Fall2014/tree/gh-pages">Check us out on GitHub</a>
