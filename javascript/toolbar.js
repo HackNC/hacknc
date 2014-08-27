@@ -190,15 +190,19 @@ Menu.prototype = {
 		var isDoge = false;
 		$('#dogeify').click(function() {
 			if (isDoge) {
+				// change these elements back to normal
 				$('body').css('font-family', '');
 				$('.toolbar').css('font-family', '');
+				$('.slogan').text("WELCOME TO HACKER COUNTRY");
 				$('#dogeify').delay(100).queue(function(next) {
 					$(this).text('Doge');
 					next();
 				});
 			} else {
+				// change these elements to doge
 				$('body').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
 				$('.toolbar').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
+				$('.slogan').text("WOW SUCH HACK COUNTRY");
 				$('#dogeify').delay(100).queue(function(next) {
 					$(this).text('Normal');
 					next();

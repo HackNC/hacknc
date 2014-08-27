@@ -12,6 +12,7 @@ body:after {
 	width: 100%;
 	font-size: 1.2em;
 	font-weight: bold;
+  user-select: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
 	-moz-user-select: none;
@@ -93,8 +94,9 @@ body:after {
 }
 
 .splash .zoomInEntrance {
-  -webkit-animation: zoomInEntrance 1s;
   animation: zoomInEntrance 1s;
+  -webkit-animation: zoomInEntrance 1s;
+  -moz-animation: zoomInEntrance 1s;
 }
 
 @-webkit-keyframes zoomInExit {
@@ -119,6 +121,7 @@ body:after {
 }
 
 .splash .zoomInExit {
+  animation: zoomInExit 1s;
 	-webkit-animation: zoomInExit 1s;
-	animation: zoomInExit 1s;
+  -moz-animation: zoomInExit 1s;
 }

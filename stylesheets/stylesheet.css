@@ -154,6 +154,7 @@ a:active {
 	bottom: 0;
 	background-color: white;
 	border-radius: 10px 10px 0px 0px;
+	-webkit-border-radius: 10px 10px 0px 0px;
 	text-align: center;
 	font-size: 2.1em;
 	font-weight: bold;
