@@ -14,16 +14,27 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 	$('.splash > .container').css('display', 'table-cell');
 	$('.splash > .container').addClass('zoomInEntrance').queue(function(next) {
 		var image = getBackgroundString(selectRandomBackground()), img = $('<img />');
+		var isloaded = false;
 		img.bind('load', function() {
-			$('.splash > .container').delay(1000).queue(function(next) {
-				$(this).removeClass('zoomInEntrance');
-				$(this).delay(500).addClass('zoomInExit').delay(400).parent().fadeOut();
-				next();
-			});
+			setTimeout(function() {
+				// show the page after the background has loaded
+				if (!isloaded) {
+					isloaded = true;
+					$('.splash > .container').removeClass('zoomInEntrance');
+					$('.splash > .container').delay(500).addClass('zoomInExit').delay(400).parent().fadeOut();
+				}
+			}, 200);
 		});
 		img.attr('src', image);
 		$('.background').css('background-image', 'url(' + image + ')');
-		next();
+		// if the background takes longer than four seconds to load, show the page anyways.
+		setTimeout(function() {
+			if (!isloaded) {
+				isloaded = true;
+				$('.splash > .container').removeClass('zoomInEntrance');
+				$('.splash > .container').delay(500).addClass('zoomInExit').delay(400).parent().fadeOut();
+			}
+		}, 4000);
 	});
 
 
