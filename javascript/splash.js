@@ -21,9 +21,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 				if (!isloaded) {
 					isloaded = true;
 					$('.splash > .container').removeClass('zoomInEntrance');
-					$('.splash > .container').delay(500).addClass('zoomInExit').delay(400).parent().fadeOut();
+					$('.splash > .container').delay(666).addClass('zoomInExit').delay(666).parent().fadeOut();
 				}
-			}, 200);
+			}, 966);
 		});
 		img.attr('src', image);
 		$('.background').css('background-image', 'url(' + image + ')');
@@ -32,9 +32,9 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
 			if (!isloaded) {
 				isloaded = true;
 				$('.splash > .container').removeClass('zoomInEntrance');
-				$('.splash > .container').delay(500).addClass('zoomInExit').delay(400).parent().fadeOut();
+				$('.splash > .container').delay(666).addClass('zoomInExit').delay(666).parent().fadeOut();
 			}
-		}, 4000);
+		}, 3666);
 	});
 
 

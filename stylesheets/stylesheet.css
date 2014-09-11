@@ -93,8 +93,6 @@ p  {
 	width: initial;
 }
 
-
-
 .main {
 	width: 90%;
 	margin: auto;
@@ -103,10 +101,15 @@ p  {
 	color: black;
 }
 
+.main > div {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 .main .left {
 	float: left;
 	margin: auto;
-	width: 80%;
+	width: 60%;
 }
 
 .main .right {
@@ -116,10 +119,10 @@ p  {
 }
 
 .maincopy {
-	margin-top: 2%;
+	/*margin-top: 2%;
 	margin-bottom: 2%;
 	margin-left: 3%;
-	margin-right: 3%;
+	margin-right: 3%;*/
 }
 
 a:link {

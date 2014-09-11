@@ -32,7 +32,6 @@
 		<!-- background -->
 		<link rel="stylesheet" type="text/css" href="./stylesheets/background.css" media="screen" />
 		<div class="background"></div>
-		<script src="./javascript/background.js"></script>
 		<!-- 	splash screen	-->
 		<link rel="stylesheet" type="text/css" href="./stylesheets/splash.css" media="screen" />
 		<div class="splash">
@@ -432,213 +431,241 @@
 			</span>
 		</header>
 		<section class="main">
-			<!-- 	Sign Up 	-->
-			<div class="right" id="signUp">
-				<h1 title="Sign up for HackNC. Powered by Google Forms.">
-					Sign up
-				</h1>
-				<div>
-					October 25-26 at <a href="https://www.google.com/maps/place/Sitterson+Hall/@35.9100095,-79.0533016,17z/data=!3m1!4b1!4m2!3m1!1s0x89acc2e6270ae415:0xc63ad7541cb9e8a1" target="_blank">UNC-Chapel Hill</a>
-				</div>
-				<!--	Google Form copypasta	-->
-				<link rel="stylesheet" type="text/css" href="./stylesheets/googleForm.css" media="screen" />
-				<form action="https://docs.google.com/forms/d/10IBpBDlN1j8_Q8HXiK8XV9YJks1LTV_RUBdO7QLoIPo/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
-					<ol role="list" class="ss-question-list">
-						<div class="ss-form-question errorbox-good" role="listitem">
-							<div dir="ltr" class="ss-item ss-item-required ss-text">
-								<div class="ss-form-entry">
-									<label class="ss-q-item-label" for="entry_636538820">
-										<div class="ss-q-title">Name
-											<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-											<span class="ss-required-asterisk">*</span>
-										</div>
-									</label>
-									<input type="text" name="entry.636538820" value="" class="ss-q-short" id="entry_636538820" dir="auto" aria-label="Name  Type your first and last name (no special characters)" aria-required="true" required="" pattern="[A-Za-z]*\s[A-Za-z]*" title="Type your first and last name (no special characters)">
-									<div class="error-message">Type your first and last name (no special characters)</div>
-									<div class="required-message">This is a required question</div>
+			
+				<!-- 	Sign Up 	-->
+				<div class="right" id="signUp">
+					<h1 title="Sign up for HackNC. Powered by Google Forms.">
+						Sign up
+					</h1>
+					<div>
+						October 25-26 at <a href="https://www.google.com/maps/place/Sitterson+Hall/@35.9100095,-79.0533016,17z/data=!3m1!4b1!4m2!3m1!1s0x89acc2e6270ae415:0xc63ad7541cb9e8a1" target="_blank">UNC-Chapel Hill</a>
+					</div>
+					<!--	Google Form copypasta	-->
+					<link rel="stylesheet" type="text/css" href="./stylesheets/googleForm.css" media="screen" />
+					<form action="https://docs.google.com/forms/d/10IBpBDlN1j8_Q8HXiK8XV9YJks1LTV_RUBdO7QLoIPo/formResponse" method="POST" id="ss-form" target="_self" onsubmit="">
+						<ol role="list" class="ss-question-list">
+							<div class="ss-form-question errorbox-good" role="listitem">
+								<div dir="ltr" class="ss-item ss-item-required ss-text">
+									<div class="ss-form-entry">
+										<label class="ss-q-item-label" for="entry_636538820">
+											<div class="ss-q-title">Name
+												<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+												<span class="ss-required-asterisk">*</span>
+											</div>
+										</label>
+										<input type="text" name="entry.636538820" value="" class="ss-q-short" id="entry_636538820" dir="auto" aria-label="Name  Type your first and last name (no special characters)" aria-required="true" required="" pattern="[A-Za-z]*\s[A-Za-z]*" title="Type your first and last name (no special characters)">
+										<div class="error-message">Type your first and last name (no special characters)</div>
+										<div class="required-message">This is a required question</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="ss-form-question errorbox-good" role="listitem">
-							<div dir="ltr" class="ss-item ss-item-required ss-text">
-								<div class="ss-form-entry">
-									<label class="ss-q-item-label" for="entry_2131353290">
-										<div class="ss-q-title">Email address
-											<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-											<span class="ss-required-asterisk">*</span>
-										</div>
-									</label>
-									<input type="email" name="entry.2131353290" value="" class="ss-q-short" id="entry_2131353290" dir="auto" aria-label="Email address  Type your email address." aria-required="true" required="" title="Type your email address.">
-									<div class="error-message">Type your email address.</div>
-									<div class="required-message">This is a required question</div>
+							<div class="ss-form-question errorbox-good" role="listitem">
+								<div dir="ltr" class="ss-item ss-item-required ss-text">
+									<div class="ss-form-entry">
+										<label class="ss-q-item-label" for="entry_2131353290">
+											<div class="ss-q-title">Email address
+												<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+												<span class="ss-required-asterisk">*</span>
+											</div>
+										</label>
+										<input type="email" name="entry.2131353290" value="" class="ss-q-short" id="entry_2131353290" dir="auto" aria-label="Email address  Type your email address." aria-required="true" required="" title="Type your email address.">
+										<div class="error-message">Type your email address.</div>
+										<div class="required-message">This is a required question</div>
+									</div>
 								</div>
 							</div>
-						</div>
-						<div class="ss-form-question errorbox-good" role="listitem">
-							<div dir="ltr" class="ss-item ss-item-required ss-text">
-								<div class="ss-form-entry">
-									<label class="ss-q-item-label" for="entry_1965639857">
-										<div class="ss-q-title">School
-											<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
-											<span class="ss-required-asterisk">*</span>
-										</div>
-									</label>
-									<input type="text" name="entry.1965639857" value="" class="ss-q-short" id="entry_1965639857" dir="auto" aria-label="School  " aria-required="true" required="" title="">
-									<div class="error-message"></div>
-									<div class="required-message">This is a required question</div>
+							<div class="ss-form-question errorbox-good" role="listitem">
+								<div dir="ltr" class="ss-item ss-item-required ss-text">
+									<div class="ss-form-entry">
+										<label class="ss-q-item-label" for="entry_1965639857">
+											<div class="ss-q-title">School
+												<label for="itemView.getDomIdToLabel()" aria-label="(Required field)"></label>
+												<span class="ss-required-asterisk">*</span>
+											</div>
+										</label>
+										<input type="text" name="entry.1965639857" value="" class="ss-q-short" id="entry_1965639857" dir="auto" aria-label="School  " aria-required="true" required="" title="">
+										<div class="error-message"></div>
+										<div class="required-message">This is a required question</div>
+									</div>
 								</div>
 							</div>
+							<input type="hidden" name="draftResponse" value="[,,&quot;1441496602096803583&quot;]">
+							<input type="hidden" name="pageHistory" value="0">
+							<input type="hidden" name="fbzx" value="1441496602096803583">
+							<div class="ss-item ss-navigate">
+								<table id="navigation-table">
+									<tbody>
+										<tr>
+											<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
+												<input type="submit" name="submit" value="Submit" id="ss-submit">
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</ol>
+					</form>
+				</div>
+				<div class="left" id="about">
+					<h1 title="The question you've all been asking">What is HackNC?</h1>
+					<div class="maincopy">
+						<p>HackNC is a hackathon for university students to create big things in a small amount of time - 24 hours between October 25th and 26th.  Your skill as a programmer, team member, and planner will be tested as you work to create anything from websites, to apps, to games, to hardware.  Along the way you will have access to food, internet, swag, mentors, and anything else you need to succeed.  In the end, the best projects will be awarded prizes!</p>
+						<p>If you are looking for something different from the typical hackathon, HackNC has something for you too.  Throughout the entire event there will be hands-on demos, lectures, and tutorials from sponsors, professionals, and professors that range from introductory concepts to the latest groundbreaking research.  And unlike most other hackathons, HackNC is not only for advanced programmers at the university level.  If you are a high school student, college student, or local professional who is interested in learning all the ints and outs of computer science, the introductory lessons are for you.</p>
+						<p>So bring your curiosity and creativity and be ready to do something new at HackNC!</p>
+					</div>
+				</div>
+				<div class="fullwidth maincopy" id="sponsors">
+					<h1 title=":3">Sponsors</h1>
+					<h2 title="Thanks for helping us out!">Fall 2014</h2>
+					<p>Interested in sponsoring the event? <a href="mailto:sponsors@hacknc.us?subject=Sponsorship&body=Hello,%0A%0D%0AWe are interested in learning more about HackNC.  Can you send us information?">Contact us!</a></p>
+					<div class="container">
+						<div class="sponsor box">
+							<a href="http://www.microsoft.com/">
+								<img src="./images/sponsors/microsoft.png" alt="Microsoft" />
+							</a>
 						</div>
-						<input type="hidden" name="draftResponse" value="[,,&quot;1441496602096803583&quot;]">
-						<input type="hidden" name="pageHistory" value="0">
-						<input type="hidden" name="fbzx" value="1441496602096803583">
-						<div class="ss-item ss-navigate">
-							<table id="navigation-table">
-								<tbody>
-									<tr>
-										<td class="ss-form-entry goog-inline-block" id="navigation-buttons" dir="ltr">
-											<input type="submit" name="submit" value="Submit" id="ss-submit">
-										</td>
-									</tr>
-								</tbody>
-							</table>
+						<div class="sponsor box">
+							<a href="http://www.emc.com/">
+								<img src="./images/sponsors/emc.png" alt="EMC" />
+							</a>
 						</div>
-					</ol>
-				</form>
-			</div>
-			<div class="left" id="about">
-				<h1 title="The question you've all been asking">What is HackNC?</h1>
-				<div class="maincopy">
-					<p>HackNC is a hackathon for university students to create big things in a small amount of time - 24 hours between October 25th and 26th.  Your skill as a programmer, team member, and planner will be tested as you work to create anything from websites, to apps, to games, to hardware.  Along the way you will have access to food, internet, swag, mentors, and anything else you need to succeed.  In the end, the best projects will be awarded prizes!</p>
-					<p>If you are looking for something different from the typical hackathon, HackNC has something for you too.  Throughout the entire event there will be hands-on demos, lectures, and tutorials from sponsors, professionals, and professors that range from introductory concepts to the latest groundbreaking research.  And unlike most other hackathons, HackNC is not only for advanced programmers at the university level.  If you are a high school student, college student, or local professional who is interested in learning all the ints and outs of computer science, the introductory lessons are for you.</p>
-					<p>So bring your curiosity and creativity and be ready to do something new at HackNC!</p>
-				</div>
-			</div>
-			<div class="fullwidth maincopy" id="sponsors">
-				<h1 title=":3">Sponsors</h1>
-				<h2 title="Thanks for helping us out!">Fall 2014</h2>
-				<p>Interested in sponsoring this event? <a href="mailto:sponsors@hacknc.us?subject=Sponsorship&body=Hello,%0A%0D%0AWe are interested in learning more about HackNC.  Can you send us information?">Contact us!</a></p>
-				<h2 title="We are eternally grateful">Previous sponsors</h2>
-				<div class="container">
-					<div class="sponsor box">
-						<a href="https://bitpay.com/">
-							<img src="./images/oldSponsors/bitpay.png" alt="BitPay"/>
-						</a>
+						<div class="sponsor box">
+							<a href="https://www.codeship.io/">
+								<img src="./images/sponsors/codeship.png" alt="Codeship" />
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="https://www.digitalocean.com/">
+								<img src="./images/sponsors/digitalocean.png" alt="DigitalOcean" />
+							</a>
+						</div>
 					</div>
-					<div class="sponsor box">
-						<a href="http://www.emc.com/">
-							<img src="./images/oldSponsors/emc.png" alt="EMC"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://www.google.com/about/">
-							<img src="./images/oldSponsors/google.png" alt="Google"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://www.redventures.com/">
-							<img src="./images/oldSponsors/redventures.png" alt="Red Ventures"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="https://getpebble.com/">
-							<img src="./images/oldSponsors/pebble.png" alt="Pebble"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://www.carolinacreates.unc.edu/">
-							<img src="./images/oldSponsors/carolinacreates.png" alt="Carolina Creates"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://www.kitware.com/">
-							<img src="./images/oldSponsors/kitware.png" alt="Kitware"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="https://www.metlife.com/">
-							<img src="./images/oldSponsors/metlife.png" alt="MetLife"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="https://www.modolabs.com/">
-							<img src="./images/oldSponsors/modoLabs.png" alt="Modo Labs"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://infusion.com/">
-							<img src="./images/oldSponsors/infusion.png" alt="Infusion"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://sendgrid.com/">
-							<img src="./images/oldSponsors/sendgrid.png" alt="SendGrid"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://innovate.unc.edu/">
-							<img src="./images/oldSponsors/innovateAtCarolina.png" alt="Innovate at Carolina"/>
-						</a>
+					<h2 title="We are eternally grateful">Previous sponsors</h2>
+					<div class="container">
+						<div class="sponsor box">
+							<a href="https://bitpay.com/">
+								<img src="./images/oldSponsors/bitpay.png" alt="BitPay"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="http://www.emc.com/">
+								<img src="./images/oldSponsors/emc.png" alt="EMC"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="http://www.google.com/about/">
+								<img src="./images/oldSponsors/google.png" alt="Google"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="http://www.redventures.com/">
+								<img src="./images/oldSponsors/redventures.png" alt="Red Ventures"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="https://getpebble.com/">
+								<img src="./images/oldSponsors/pebble.png" alt="Pebble"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="http://www.carolinacreates.unc.edu/">
+								<img src="./images/oldSponsors/carolinacreates.png" alt="Carolina Creates"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="http://www.kitware.com/">
+								<img src="./images/oldSponsors/kitware.png" alt="Kitware"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="https://www.metlife.com/">
+								<img src="./images/oldSponsors/metlife.png" alt="MetLife"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="https://www.modolabs.com/">
+								<img src="./images/oldSponsors/modoLabs.png" alt="Modo Labs"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="http://infusion.com/">
+								<img src="./images/oldSponsors/infusion.png" alt="Infusion"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="http://sendgrid.com/">
+								<img src="./images/oldSponsors/sendgrid.png" alt="SendGrid"/>
+							</a>
+						</div>
+						<div class="sponsor box">
+							<a href="http://innovate.unc.edu/">
+								<img src="./images/oldSponsors/innovateAtCarolina.png" alt="Innovate at Carolina"/>
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
-			<div class="fullwidth" id="faq">
-				<h1 title="I'm really only worried about the food">FAQs</h1>
-				<div class="container">
-					<div class="faq box">
-						<span class="q">Can I attend?</span>
-						<span class="a">High school, undergraduate, and graduate students are welcome to hack.  Professionals are welcome to join as mentors, sponsors, or attend the lectures.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">What's going to happen?</span>
-						<span class="a">A 24 hour period of hacking during which you will become a better programmer, meet new people, and make cool stuff. You'll have the chance to learn a lot and get loads of free stuff!</span>
-					</div>
-					<div class="faq box">
-						<span class="q">What about my team?</span>
-						<span class="a">Be yourself; sign up as an individual! You can create your team with whoever you like once you arrive.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">What can we hack?</span>
-						<span class="a">HackNC is both a software and hardware hackathon. Code for web, mobile, desktop, and hack away at hardware to your heart's content.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">Can we build off existing code?</span>
-						<span class="a">The purpose of the event is to see what you can do in the time you're given.  You can use all the APIs you want but the code you will be judged on must be new.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">Will there be food?</span>
-						<span class="a">Don’t worry.  We’ll provide five full meals throughout the hackathon and there will be plenty of snacks in between.  You won’t be hungry.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">Will there be a bus for my school?</span>
-						<span class="a">If your school has enough interest, we will make sure that you have free transportation to HackNC.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">I’ve never programmed before.  What’s a php?</span>
-						<span class="a">HackNC, unlike other hackathons, will have lectures, workshops, and many hands-on learning events throughout the entire weekend.  If you want to learn how to program, we've got something for you.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">I’m a programming wizard.  Why should I come?</span>
-						<span class="a">We’ll have tech companies here from all around the country who want to meet you.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">What hardware will be provided?</span>
-						<span class="a">We will have Myos, Arduinos, Pebbles, and lots more... Maybe even an Oculus Rift.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">Do I need a computer?</span>
-						<span class="a">If you plan on hacking, bring your laptop (or desktop + monitor + mouse + keyboard if you really want to).</span>
-					</div>
-					<div class="faq box">
-						<span class="q">What about...?</span>
-						<span class="a"><a href="mailto:contact@hacknc.us">Email us</a> with any of your questions.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">What else?</span>
-						<span class="a">We will have a video game lounge, tons of mentors, info-sessions, a hardware lab, free swag, and anything else you could possibly dream of...</span>
+				<div class="fullwidth" id="faq">
+					<h1 title="I'm really only worried about the food">FAQs</h1>
+					<div class="container">
+						<div class="faq box">
+							<span class="q">Can I attend?</span>
+							<span class="a">High school, undergraduate, and graduate students are welcome to hack.  Professionals are welcome to join as mentors, sponsors, or attend the lectures.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">What's going to happen?</span>
+							<span class="a">A 24 hour period of hacking during which you will become a better programmer, meet new people, and make cool stuff. You'll have the chance to learn a lot and get loads of free stuff!</span>
+						</div>
+						<div class="faq box">
+							<span class="q">What about my team?</span>
+							<span class="a">Be yourself; sign up as an individual! You can create your team with whoever you like once you arrive.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">What can we hack?</span>
+							<span class="a">HackNC is both a software and hardware hackathon. Code for web, mobile, desktop, and hack away at hardware to your heart's content.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">Can we build off existing code?</span>
+							<span class="a">The purpose of the event is to see what you can do in the time you're given.  You can use all the APIs you want but the code you will be judged on must be new.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">Will there be food?</span>
+							<span class="a">Don’t worry.  We’ll provide five full meals throughout the hackathon and there will be plenty of snacks in between.  You won’t be hungry.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">Will there be a bus for my school?</span>
+							<span class="a">If your school has enough interest, we will make sure that you have free transportation to HackNC.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">I’ve never programmed before.  What’s a php?</span>
+							<span class="a">HackNC, unlike other hackathons, will have lectures, workshops, and many hands-on learning events throughout the entire weekend.  If you want to learn how to program, we've got something for you.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">I’m a programming wizard.  Why should I come?</span>
+							<span class="a">We’ll have tech companies here from all around the country who want to meet you.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">What hardware will be provided?</span>
+							<span class="a">We will have Myos, Arduinos, Pebbles, and lots more... Maybe even an Oculus Rift.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">Do I need a computer?</span>
+							<span class="a">If you plan on hacking, bring your laptop (or desktop + monitor + mouse + keyboard if you really want to).</span>
+						</div>
+						<div class="faq box">
+							<span class="q">Will there be travel reimbursements?</span>
+							<span class="a">Travel reimbursements will be announced at the beginning of October, but go ahead and sign up now to get on our <a href="http://en.wikipedia.org/wiki/Linked_list">list</a>.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">What about...?</span>
+							<span class="a"><a href="mailto:contact@hacknc.us">Email us</a> with any of your questions.</span>
+						</div>
+						<div class="faq box">
+							<span class="q">What else?</span>
+							<span class="a">We will have a video game lounge, tons of mentors, info-sessions, a hardware lab, free swag, and anything else you could possibly dream of...</span>
+						</div>
 					</div>
 				</div>
-			</div>
+
 		</section>
 		<footer title="Wow, you made it to the bottom.">
 			<em>Copyright &copy; 2014 HackNC Team</em>
