@@ -91,7 +91,7 @@ p  {
 }
 
 .box.sponsor {
-	max-width: 400px;
+	max-width: 18em;
 }
 
 .container {
@@ -138,7 +138,7 @@ p  {
 
 .container.oldSponsors div.box.sponsor {
 	max-width: 200px;
-	width: 20%;
+	width: 25%;
 	min-width: 100px;
 }
 
