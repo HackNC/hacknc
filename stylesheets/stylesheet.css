@@ -3,6 +3,21 @@
 	padding: 0;
 }
 
+a:link {
+	color: inherit;
+	text-decoration: none;
+}
+a:visited {
+	color: inherit;
+}
+a:hover {
+	opacity:0.8;
+	text-decoration: underline;
+}
+a:active {
+
+}
+
 body {
 	background-color: #005972;
 	color: white;
@@ -76,7 +91,7 @@ p  {
 }
 
 .box.sponsor {
-	max-width: 15em;
+	max-width: 400px;
 }
 
 .container {
@@ -94,7 +109,8 @@ p  {
 }
 
 .main {
-	width: 90%;
+	width: 88%;
+	padding: 1%;
 	margin: auto;
 	background-color: white;
 	border: 0px;
@@ -120,20 +136,12 @@ p  {
 	margin-right: 3%;
 }
 
-a:link {
-	color: inherit;
-	text-decoration: none;
+.container.oldSponsors div.box.sponsor {
+	max-width: 200px;
+	width: 20%;
+	min-width: 100px;
 }
-a:visited {
-	color: inherit;
-}
-a:hover {
-	opacity:0.8;
-	text-decoration: underline;
-}
-a:active {
 
-}
 .q {
 	display: inline-block;
 	width: 100%;
@@ -183,7 +191,8 @@ a:active {
     	font-size: 16pt;
     }
 	.main {
-		width: 90%;
+		width: 88%;
+		padding: 1%;
 	}
 	.slogan {
 		width: 90%;
@@ -211,7 +220,8 @@ a:active {
 		width: 90%;
 	}
 	.main {
-		width: 100%;
+		width: 96%;
+		padding: 2%;
 	}
 	.main .right {
 		float: none;
