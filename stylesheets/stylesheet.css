@@ -2,17 +2,22 @@
 	margin: 0;
 	padding: 0;
 }
-
+a[href^="mailto:"]:after {
+	content: " ✉";
+	display: inline-block;
+	padding: 2px;
+	vertical-align: top;
+	text-indent: 0;
+	font-size: 0.75em;
+}
 a:link {
-	color: inherit;
-	text-decoration: none;
+	color: #005972;
 }
 a:visited {
-	color: inherit;
+	color: #005972;
 }
 a:hover {
 	opacity:0.8;
-	text-decoration: underline;
 }
 a:active {
 
@@ -137,7 +142,7 @@ p  {
 }
 
 .container.oldSponsors div.box.sponsor {
-	max-width: 200px;
+	max-width: 150px;
 	width: 25%;
 	min-width: 100px;
 }

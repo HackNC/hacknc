@@ -17,6 +17,8 @@ if (navigator.userAgent.indexOf('Chrome') != -1) {
 	console.log('\n _    _               _      _   _   _____ \n| |  | |             | |    | \\ | | / ____|\n| |__| |  __ _   ___ | | __ |  \\| || |     \n|  __  | / _` | / __|| |/ / | . ` || |     \n| |  | || (_| || (__ |   <  | |\\  || |____ \n|_|  |_| \\__,_| \\___||_|\\_\\ |_| \\_| \\_____|\n                                           \n         WELCOME TO HACKER COUNTRY         ');
 }
 
+document.cookie = "WhatIsACookie=lol";
+
 ////////////////// function definitions //////////////////
 // scrolling on anchor clicks
 $(function() {
@@ -34,4 +36,8 @@ $(function() {
 			}
 		}
 	});
+});
+////////////////// Autocomplete //////////////////
+$( "#entry_1965639857" ).autocomplete({
+	source: schools
 });
