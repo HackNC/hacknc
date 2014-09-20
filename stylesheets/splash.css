@@ -45,14 +45,11 @@ body:after {
 	text-align: center;
 }
 
-.splash > .container > div > span {
-  color: #005972;
-  background-color: white;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 5px;
-  opacity: 0.75;
+.splash > .container > div > span > a {
+  color: white;
+  text-decoration: none;
 }
+
 .splash > .container > img {
 	display: block;
 	margin: auto;
