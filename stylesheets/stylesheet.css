@@ -111,6 +111,12 @@ p  {
 	color: black;
 }
 
+.container.oldSponsors div.box.sponsor {
+	max-width: 100px;
+	width: 25%;
+	min-width: 75px;
+}
+
 .faq{
 
 }
@@ -146,12 +152,6 @@ p  {
 	margin-bottom: 2%;
 	margin-left: 3%;
 	margin-right: 3%;
-}
-
-.container.oldSponsors div.box.sponsor {
-	max-width: 150px;
-	width: 25%;
-	min-width: 100px;
 }
 
 .q {
