@@ -98,6 +98,13 @@ p  {
 .box.sponsor {
 	max-width: 18em;
 }
+.box.sponsor.large {
+	width: 90%;
+	max-width: 18em;
+}
+.box.sponsor.small {
+	max-width: 9em;
+}
 
 .container {
 	text-align: center;
