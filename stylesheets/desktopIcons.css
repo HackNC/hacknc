@@ -18,6 +18,9 @@
     column-fill: auto;
 }
 
+.desktopIcons > a {
+	text-decoration: none;
+}
 .desktopIcons.shadow {
 	-webkit-filter: drop-shadow(6px 6px 7px rgba(0,0,0,0.5));
 	filter: url(shadow.svg#drop-shadow);
