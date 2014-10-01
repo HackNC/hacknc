@@ -12,7 +12,7 @@ if (cookie != "") {
 } else {
 	setCookie("splash", 0, 1/(24*60));
 	// create a mask over the header with the splash.css style
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		// mobile
 		setLogoSize();
 		$('.background').css('background-image', 'url(' + getBackgroundString(selectRandomBackground()) + ')');
