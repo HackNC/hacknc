@@ -71,7 +71,7 @@ function getBackgroundString(image) {
 	} else {
 		size = '2048';
 	}
-	return './images/backgrounds/' + image + '_' + size + '.jpg';
+	return './images/backgrounds/compressed/' + image + '_' + size + '-compressed.jpg';
 }
 
 function selectRandomBackground() {
