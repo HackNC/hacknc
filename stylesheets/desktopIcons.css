@@ -256,7 +256,7 @@
 	}
 }
 
-.mobile.desktopIcons {
+.mobile .desktopIcons {
 	-webkit-column-count: 1;
 	-ms-column-count: 1; 
 	-moz-column-count: 1;
