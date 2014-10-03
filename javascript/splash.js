@@ -1,24 +1,21 @@
 var cookie = getCookie("splash");
-if (cookie != "") {
-	// skip splash screen
-	var image = getBackgroundString(selectRandomBackground()), img = $('<img />');
-	img.bind('load', function() {
-		// show the page after the background has loaded
-		$('.background').fadeIn();
-	});
-	img.attr('src', image);
-	$('.background').css('background-image', 'url(' + image + ')');
-	$('.background').css('display', 'none');
-} else {
-	setCookie("splash", 0, 1/(24*60));
-	// create a mask over the header with the splash.css style
-	if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
+if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
 		// mobile
-		setLogoSize();
-		$('.background').css('background-image', 'url(' + getBackgroundString(selectRandomBackground()) + ')');
-		$('.splash > .container').css('display', 'table-cell');
-		$('.splash').delay(1000).fadeOut(500);
+		$('body').css('background-image', 'url(' + getBackgroundString(selectRandomBackground()) + ')');
+} else {
+	if (cookie != "") {
+		// skip splash screen
+		var image = getBackgroundString(selectRandomBackground()), img = $('<img />');
+		img.bind('load', function() {
+			// show the page after the background has loaded
+			$('.background').fadeIn();
+		});
+		img.attr('src', image);
+		$('.background').css('background-image', 'url(' + image + ')');
+		$('.background').css('display', 'none');
 	} else {
+		setCookie("splash", 0, 1/(24*60));
+		// create a mask over the header with the splash.css style
 		// everything else
 		setLogoSize();
 		window.addEventListener('resize', function(event) {

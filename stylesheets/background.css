@@ -10,3 +10,9 @@ div.background {
 	background-repeat: no-repeat;
 	background-position: center 30%;
 }
+
+body {
+	background-position: top center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
