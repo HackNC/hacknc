@@ -60,6 +60,7 @@ $('#wifiLink').click(function() {
 	}
 });
 
+// close
 $('.popup').click(function(e) {
 	if (e.target === this) {
 		if ($(this).is(':visible')) {
@@ -68,3 +69,8 @@ $('.popup').click(function(e) {
 	}
 });
 
+$('.popup .closeButton').click(function(e) {
+	if ($(this).closest('.popup').is(':visible')) {
+		$(this).closest('.popup').hide();
+	}
+});

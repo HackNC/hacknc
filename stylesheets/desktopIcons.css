@@ -101,6 +101,12 @@
 	max-height: 24em;
 }
 
+.popup .closeButton {
+	float: right;
+	width: 15px;
+	height: 15px;
+}
+
 .popup img {
 	width: 100%;
 }
