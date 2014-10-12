@@ -123,15 +123,6 @@
 	list-style: none;
 }
 
-.popup#mentors > div {
-	max-height: 6em;
-}
-
-.popup#map > div {
-	max-height: 400px;
-	max-width: 400px;
-}
-
 .popup table {
 	border-collapse: collapse;
 }
@@ -156,7 +147,7 @@
 }
 
 .popup#food .schedTime {
-	width: 85px;
+	width: 90px;
 }
 
 .popup#schedule .schedTime {
@@ -199,14 +190,10 @@
 }
 
 .mobile .popup > div {
-	width: 100%;
+	width: 96%;
+	padding: 2%;
 	height: 100%;
 	max-height: none;
 	max-width: none;
 	background-color: white;
-}
-
-.mobile .popup .closeButton {
-	position: relative;
-	right: 20px;
 }
