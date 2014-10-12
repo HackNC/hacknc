@@ -144,10 +144,30 @@ Menu.prototype = {
 					animatingNow = true;
 					if (poweredOn) {
 						poweredOn = false;
-						$('.standby').fadeIn(function() {animatingNow = false});
+						$('.standby').fadeIn(function() {
+							animatingNow = false
+							// show sponsors
+							var sponsors = ["mlh.png", "microsoft.png", "emc.png", "codeship.png", "infusion.png", "digitalocean.png", "innovate.png", "spoon.png", "google.png", "square.png",  "allscripts.png", "creditsuisse.png", "nvidia.png", "cheerwine.png", "sparkfun.png"];
+							// define a function
+							var i =  0;
+							function loopAnimation() {
+								if ($('.standby').is(':visible')) {
+									$('.standby #powerSponsor').fadeOut(function(){
+										$(this).attr('src', './images/sponsors/' + sponsors[i]).fadeIn(function() {
+											i = (i + 1) % sponsors.length
+											setTimeout(loopAnimation, 3000);
+										});
+									});
+								}
+							}
+							// do animation of sponsor images
+							loopAnimation(0);
+						});
 					} else {
 						poweredOn = true;
-						$('.standby').fadeOut(function() {animatingNow = false});
+						$('.standby').fadeOut(function() {
+							animatingNow = false
+						});
 					}
 				}
 			})
@@ -202,7 +222,7 @@ Menu.prototype = {
 				// change these elements to doge
 				$('body').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
 				$('.toolbar').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
-				$('.slogan').text("WOW SUCH HACK COUNTRY");
+				$('.slogan').text("WOW HACK. SUCH COUNTRY");
 				$('#dogeify').delay(100).queue(function(next) {
 					$(this).text('Normal');
 					next();

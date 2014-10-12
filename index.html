@@ -61,9 +61,15 @@
 		<link rel="stylesheet" type="text/css" href="./stylesheets/toolbar.css" media="screen" />
 		<div class="standby">
 			<div>
-				<a class="power">
-					<img src="./images/toolbar/standby.png" alt="on/off" />
-				</a>
+				<h1>
+					Powered by...
+				</h1>
+				<img id="powerSponsor" />
+				<div>
+					<a class="power">
+						<img src="./images/toolbar/standby.png" alt="on/off" />
+					</a>
+				</div>
 			</div>
 		</div>
 		<div class="osInfo">
@@ -251,74 +257,268 @@
 		<header>
 			<!--	icons	-->
 			<link rel="stylesheet" type="text/css" href="./stylesheets/desktopIcons.css" media="screen" />
-			<div class="popup" id="pizza">
+			<div class="popup" id="food">
 				<div>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.svg"/></a>
-					<h3>Hungry?</h3>
-					<p><a href='mailto:food@hacknc.us?subject=We are hungry&body=I am in room [null]%0A%0APlease deliver the following for me and the people around me:%0A(Item: Quantity)%0AChips: 0%0AEnergy bar: 0%0Whole pizza: 0%0A%0ANotes: '>Click here</a> and we'll deliver a snack in no time</p>
+					<h1>What's on the menu?</h1>
+					<p style="font-size: 0.7em; color: rgba(0,0,0,0.5);">Click the meals to learn more!</p>
+					<table>
+						<tbody>
+							<tr>
+								<td class="schedTime" title="Lunch time!">Lunch</td>
+								<td title="Yummmmm">
+									Artisan Pizza Kitchen
+									<div class="slider">
+										<p>We are starting you off with an old Hackathon mainstay. Call us cheesy, but we couldn’t resist.</p>
+										<img src="./images/food/pizzaparty.png"/>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="Dinner time!">Dinner</td>
+								<td title="Yummmmm">
+									The Q Shack
+									<div class="slider">
+										<p>You can’t come to NC without a heaping plate of our famous BBQ! Enjoy what Southerners do best, gorge yourself.</p>
+										<img src="./images/food/qshack.png"/>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="snack time!">Midnight snack</td>
+								<td title="Yummmmm">
+									Dessert
+									<div class="slider">
+										<p>Got the Munchies? Us too. Chow down on some tasty cookies with us at night.</p>
+										<img src="./images/food/atnight.png"/>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="The very most important meal of the day!">Breakfast</td>
+								<td title="Yummmmm">
+									Continental Breakfast
+									<div class="slider">
+										<p>That’s right. All the Continents.</p>
+										<img src="./images/food/continents.png"/>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="The last supper">Lunch</td>
+								<td title="Yummmmm">
+									Vimala's Curryblossom Cafe
+									<div class="slider">
+										You better hurry if you want some of this curry! Just kidding we will have plenty.
+										<img src="./images/food/Bestof2013.png"/>
+									</div>
+								</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</div>
 			<div class="popup" id="mentors">
 				<div>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.svg"/></a>
-					<h3>Need help from a mentor?</h3>
+					<h1>Need help from a mentor?</h1>
 					<p><a href='mailto:mentors@hacknc.us?subject=We need help&body=I am in room [null]%0A%0AWe are working on [null]%0AWe need help with [null]'>Click here</a> and one of our mentors will meet with you ASAP.</p>
 				</div>
 			</div>
 			<div class="popup" id="schedule">
 				<div>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.svg"/></a>
-					<h3>Tentative schedule</h3>
+					<h1>Schedule</h1>
+					<p style="font-size: 0.7em; color: rgba(0,0,0,0.5);">Click the events to learn more!</p>
 					<table>
 						<tbody>
 							<tr>
-								<td colspan=2 title="Day 1"><em>
-								<hr>
-								Saturday, October 25</em></td>
+								<td colspan=2 title="Day 1" style="border-top: "><h2>
+								Saturday, October 25</h2></td>
 							</tr>
 							<tr>
-								<td title="You don't have to show up this early">11:00 am</td><td title="but we'll be here.">Check in opens</td>
+								<td class="schedTime" title="You don't have to show up this early">11:00 am</td>
+								<td title="but we'll be here.">
+									Check in opens
+									<div class="slider">
+										Fred Brooks Computer Science Building Lobby &mdash; Register to receive your t-shirt and #swag. Parking is available at
+										<a href="https://www.google.com/maps/place/Venable+Lot,+S+Rd,+University+of+North+Carolina+at+Chapel+Hill,+Chapel+Hill,+NC+27514/@35.909297,-79.0521925,17z/data=!3m1!4b1!4m2!3m1!1s0x89acc2e8bd990c29:0xea443c64902cb55c">Venable Lot</a>
+										and <a href="https://www.google.com/maps/place/Nash+Parking+Lot,+University+of+North+Carolina+at+Chapel+Hill,+Chapel+Hill,+NC+27516/@35.9087347,-79.0561535,17z/data=!3m1!4b1!4m2!3m1!1s0x89acc2e6876f35c5:0xdacf7ca950a5917c">Nash Lot</a>.
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="Lunch time">12:00 pm</td><td title="Some kind of sandwich and awesome">Lunch with sponsors</td>
+								<td class="schedTime" title="Lunch time">11:30 pm</td>
+								<td title="Some kind of sandwich and awesome">
+									Lunch with sponsors
+									<div class="slider">
+										Sitterson Hall Lobby &mdash; Enjoy a tasty lunch while meeting our sponsors during the career fair (11:30-2:00pm).
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="Get pumped up...">1:00 pm</td><td title="...for everything!">Opening ceremony</td>
+								<td class="schedTime" title="Get pumped up...">12:30 pm</td>
+								<td title="...for everything!">
+									Opening ceremony
+									<div class="slider">
+										Carroll Hall 111 &mdash; Get pumped up and find out about prizes, workshops, APIs, and other fun things!
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="What time is it?">2:00 pm</td><td title="Game time.">Hacking begins</td>
+								<td class="schedTime" title="What time is it?">1:30 pm</td>
+								<td title="Game time.">
+									Let the hacking begin
+									<div class="slider">
+										Hacking spaces available in:
+										<ul>
+											<li>Sitterson 014, 011, 115</li>
+											<li>Fred Brooks 007, 008</li>
+											<li>Phillips Hall 206, 208</li>
+										</ul>
+										Hardware Lab in Phillips Hall 273, 275
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="Time undefined"></td><td title="Such learn">Tech talks and workshops</td>
+								<td class="schedTime" title="Such work">2:00pm</td>
+								<td title="Such learn">
+									Workshops begin
+									<div class="slider">
+										Workshops will occur between 2:00-10:00pm.
+										<ul>
+											<li><!--TBA space-->Web Development with KMP</li>
+											<li><!--TBA space-->Game Development with Diane Pozefsky</li>
+											<li><!--TBA space-->Computer Science is Magic! with Gary Bishop</li>
+										</ul>
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="Dinner time">6:00 pm</td><td title="Barbecue">Dinner</td>
+								<td class="schedTime" title="So much Luv">4:00pm</td>
+								<td title="So unreal">Jason, Luv 'n VR
+									<div class="slider">
+										Fred Brooks 009 &mdash; Learn about VR development. We have Oculus Rift DK2s in the hardware lab.
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="Time NaN"></td><td title="#learning">Tech talks and workshops</td>
+								<td class="schedTime" title="Money Time!">5:00pm</td>
+								<td title="Money makes the world go round">
+									Square tech talk
+									<div class="slider">
+										Fred Brooks 009 &mdash; Learn how Square does it.
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td colspan=2 title="Day 2"><em>
-								<hr>
-								Sunday, October 26</em></td>
+								<td class="schedTime" title="Dinner time">6:00 pm</td>
+								<td title="get your square meal">
+									Square dinner for the ladies
+									<div class="slider">
+										Fred Brooks 009 &mdash; WiCS event: get a square meal and talk with Square.
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="Wow so late">12:00 am</td><td title="Involves food">Super secret event....</td>
+								<td class="schedTime" title="Dinner time">6:00 pm</td>
+								<td title="Barbecue">
+									Dinner
+									<div class="slider">
+										Fred Brooks lobby &mdash; Enjoy free food.
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="Why so early?">7:00 am</td><td title="The usual">Breakfast</td>
+								<td class="schedTime" title="It's">7:00 pm</td>
+								<td title="E=MC HammerTime">
+									EMC tech talk
+									<div class="slider">
+										Fred Brooks 009 &mdash; Learn about EMC and how they do it.
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="I'm hungry">11:30 am</td><td title="Indian food">Lunch</td>
+								<td class="schedTime" title="Hacking break">8:00 pm</td>
+								<td title="Play games!">
+									Video game tournaments
+									<div class="slider">
+										Sitterson Lobby &mdash; Take a break from hacking and play games.
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="Time TBA"></td><td title="Presentation time!">Expo</td>
+								<td colspan=2 title="Day 2"><h2>
+								Sunday, October 26</h2></td>
 							</tr>
 							<tr>
-								<td title="So you can get home on time...">2:00 pm</td><td title="...we have to stop.">Closing ceremony</td>
+								<td class="schedTime" title="Wow so late">12:00 am</td>
+								<td title="Involves food">
+									Special Event
+									<div class="slider">
+										Shhh can't tell you yet.
+									</div>
+								</td>
 							</tr>
 							<tr>
-								<td title="4:33, to be exact">4:00 pm</td><td title="Bye! C u l8ur">Time to go... :(</td>
+								<td class="schedTime" title="zzz">1:00 am</td>
+								<td title="while(!asleep){sheep++}">
+									Nap room opens
+									<div class="slider">
+										TBA &mdash; Bring a sleeping bag/blanket and pillow.
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="Why so early?">7:00 am</td><td title="The usual">
+									Breakfast
+									<div class="slider">
+										Fred Brooks lobby &mdash; Start your day off with a well-balanced meal!
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="I'm hungry">11:30 am</td>
+								<td title="Indian food">Lunch
+									<div class="slider">
+									Fred Brooks lobby &mdash; Finish up your projects and enjoy lunch with a special guest, Cheerwine! Mmmm
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="High Noon">12:00 pm</td>
+								<td title="The gun goes off">
+									Hacking ends
+									<div class="slider">
+										Everywhere &mdash; Submit your projects online before 12:00pm.
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="">12:30 pm</td>
+								<td title="Presentation time!">
+									Expo
+									<div class="slider">
+										Sitterson Lobby &mdash; Show off your hard work and see what others made. Presentations run from 12:30-1:45pm
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="So you can get home on time...">2:00 pm</td>
+								<td title="...we have to stop.">Closing ceremony
+									<div class="slider">
+										Carroll Hall 111 &mdash; Prizes awarded to the best projects.
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td class="schedTime" title="4:33, to be exact">4:00 pm</td>
+								<td title="Bye! C u l8ur">
+									Time to go... :(
+									<div class="slider">
+										Bye, bye. Buses will leave around 4:30pm.
+									</div>
+								</td>
 							</tr>
 						</tbody>
 					</table>
@@ -327,7 +527,7 @@
 			<div class="popup" id="prizes">
 				<div>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.svg"/></a>
-					<h3>List of prizes</h3>
+					<h1>List of prizes</h1>
 					<ul>
 						<li>TBA... ;)</li>
 					</ul>
@@ -336,7 +536,7 @@
 			<div class="popup" id="map">
 				<div>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.svg"/></a>
-					<h3>Area maps</h3>
+					<h1>Area maps</h1>
 					<div>
 					</div>
 					<a href='./images/maps/sitterson_level_0.jpg'>
@@ -350,16 +550,16 @@
 			<div class="popup" id="wifi">
 				<div>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.svg"/></a>
-					<h3>Connecting to the Internet</h3>
-					<em>Adapted from <a href='http://www.cs.unc.edu/cms/help/help-articles/connecting-to-the-wireless-network/?searchterm=network%20connecting'>cs.unc.edu</a></em>
-					<p>To use the network, register the MAC address of your device with the HackNC organizers during the event.</p>
-					<h4>UNC-SECURE</h4>
+					<h1>Connecting to the Internet</h1>
+					<p style="font-size: 0.7em; color: rgba(0,0,0,0.5);">Adapted from <a href='http://www.cs.unc.edu/cms/help/help-articles/connecting-to-the-wireless-network/?searchterm=network%20connecting'>cs.unc.edu</a></p>
+					<p>To use the network, register the MAC address of your device with the HackNC organizers before or during the event.</p>
+					<h2>UNC-SECURE</h2>
 					<p>UNC-Secure is the primary wireless network, <a class="external-link" href="http://help.unc.edu/CCM3_008509">configuration instructions</a> are provided by ITS.</p>
-					<h4>UNC-PSK</h4>
+					<h2>UNC-PSK</h2>
 					<p>UNC-PSK is available if for whatever reason you cannot use UNC-SECURE, it uses a shared secret key instead of a certificate.  Ask an organizer for the password if you are unable to connect to UNC-SECURE.</p>
-					<h4>UNC-Guest</h4>
+					<h2>UNC-Guest</h2>
 					<p>This is the public "guest" network, requiring no password.  Access on this network is limited to web and a few other protocols, and to the internet outside the unc.edu domain.</p>
-					<h4>Ethernet</h4>
+					<h2>Ethernet</h2>
 					<p>This is the simplest, and fastest, option for anyone who doesn't want to worry about passwords.  Note that you must still register your MAC address.</p>
 				</div>
 			</div>
@@ -400,10 +600,10 @@
 						Twitter
 					</div>
 				</a>
-				<a href="#" id="pizzaLink">
-					<div class="icon" title="Get unHungry"/>
-						<img src="./images/icons/pizza.png" class="image" alt="Pizza" >
-						Snack
+				<a href="#" id="foodLink">
+					<div class="icon" title="What's on the menu?"/>
+						<img src="./images/icons/pizza.png" class="image" alt="Menu" >
+						Menu
 					</div>
 				</a>
 				<a href="#" id="mentorsLink">

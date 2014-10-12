@@ -10,11 +10,11 @@ window.addEventListener('resize', function(event) {
 	desktopIcons_setDesktopSize();
 });
 
-$('#pizzaLink').click(function() {
-	if ($('#pizza').is(':visible')) {
-		$('#pizza').hide();
+$('#foodLink').click(function() {
+	if ($('#food').is(':visible')) {
+		$('#food').hide();
 	} else {
-		$('#pizza').show();
+		$('#food').show();
 	}
 });
 
@@ -72,5 +72,14 @@ $('.popup').click(function(e) {
 $('.popup .closeButton').click(function(e) {
 	if ($(this).closest('.popup').is(':visible')) {
 		$(this).closest('.popup').hide();
+	}
+});
+
+$('.popup tr').click(function(e) {
+	$(this).find('.slider').slideToggle()
+	if ($(this).find('td + td').attr('style')) {
+		$(this).find('td + td').removeAttr('style');
+	} else {
+		$(this).find('td + td').css('background-color', 'rgba(0,0,0,0.05)');
 	}
 });
