@@ -82,6 +82,18 @@ $('#wifiLink').click(function() {
 	}
 });
 
+$('#chatLink').click(function() {
+	if ($('html').hasClass('mobile')) {
+		document.location = "http://webchat.freenode.net?channels=%23HackNC&uio=OT10cnVlJjExPTIyNge7";
+	} else {
+		if ($('#chat').is(':visible')) {
+			$('#chat').hide();
+		} else {
+			$('#chat').show();
+		}
+	}
+});
+
 // close
 $('.popup').click(function(e) {
 	if (e.target === this) {
