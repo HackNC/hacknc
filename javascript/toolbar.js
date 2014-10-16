@@ -469,7 +469,7 @@ Battery.prototype = {
 		var imgs = [];
 		for (var i=0; i <= maxCharge; i++) {
 			imgs[i] = new Image();
-			imgs[i].src = './images/toolbar/battery_' + i + '.svg';
+			imgs[i].src = './images/toolbar/battery_' + i + '.png';
 		}
 		var i = 0;
 		window.setInterval(function() {
