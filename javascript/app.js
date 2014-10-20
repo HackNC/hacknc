@@ -1,9 +1,22 @@
-$('.app tr').click(function(e) {
-	$(this).find('.slider').slideToggle()
-	if ($(this).find('td + td').attr('style')) {
-		$(this).find('td + td').removeAttr('style');
+$(".app tr").click(function( e ) {
+	var target = e.target;
+	if ( target.nodeName == 'A' ) {
+		var hashIndex = target.href.indexOf( '#' );
+		if ( hashIndex !== -1 ) {
+			e.preventDefault();
+			slide(this);
+		} else return true;
 	} else {
-		$(this).find('td + td').css('background-color', 'rgba(0,0,0,0.05)');
+		slide(this);
+	}
+});
+
+function slide( element ) {
+	$(element).find('.slider').slideToggle();
+	if ($(element).find('td + td').attr('style')) {
+		$(element).find('td + td').removeAttr('style');
+	} else {
+		$(element).find('td + td').css('background-color', 'rgba(0,0,0,0.05)');
 	}
 	return false;
-});
+}

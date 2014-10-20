@@ -16,7 +16,7 @@
 		<meta property="og:image" content="http://hacknc.us/images/backgrounds/2_2048.jpg"/>
 		<meta property="og:image" content="http://hacknc.us/images/backgrounds/3_2048.jpg"/>
 		<meta property="og:image" content="http://hacknc.us/images/backgrounds/6_2048.jpg"/>
-		
+
 		<link rel="icon" href="./favicon.ico" type="image/x-icon"/>
 		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
 		<link href="stylesheets/jquery-ui.css" rel="stylesheet">
@@ -255,50 +255,59 @@
 		<script src="./javascript/toolbar.js"></script>
 		<!-- /toolbar -->
 		<header>
-			<!--	icons	-->
+			<!--	Popup windows	-->
 			<link rel="stylesheet" type="text/css" href="./stylesheets/desktopIcons.css" media="screen" />
 			<div class="popup" id="food">
 				<div>
+					<a href="./menu.html" class="newtab" target="blank"><img alt="^" src="./images/icons/external.png"/></a>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.png"/></a>
 					<iframe src="./menu.html" frameborder=0></iframe>
 				</div>
 			</div>
 			<div class="popup" id="mentors">
 				<div>
+					<a href="./mentors.html" class="newtab" target="blank"><img alt="^" src="./images/icons/external.png"/></a>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.png"/></a>
 					<iframe src="./mentors.html" frameborder=0></iframe>
 				</div>
 			</div>
 			<div class="popup" id="schedule">
 				<div>
+					<a href="./schedule.html" class="newtab" target="blank"><img alt="^" src="./images/icons/external.png"/></a>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.png"/></a>
 					<iframe src="./schedule.html" frameborder=0></iframe>
 				</div>
 			</div>
 			<div class="popup" id="prizes">
 				<div>
+					<a href="./prizes.html" class="newtab" target="blank"><img alt="^" src="./images/icons/external.png"/></a>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.png"/></a>
 					<iframe src="./prizes.html" frameborder=0></iframe>
 				</div>
 			</div>
 			<div class="popup" id="map">
 				<div>
+					<a href="./maps.html" class="newtab" target="blank"><img alt="^" src="./images/icons/external.png"/></a>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.png"/></a>
-					<iframe src="./maps.html?" frameborder=0></iframe>
+					<iframe src="./maps.html" frameborder=0></iframe>
 				</div>
 			</div>
 			<div class="popup" id="wifi">
 				<div>
+					<a href="./wifi.html" class="newtab" target="blank"><img alt="^" src="./images/icons/external.png"/></a>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.png"/></a>
 					<iframe src="./wifi.html" frameborder=0></iframe>
 				</div>
 			</div>
 			<div class="popup" id="chat">
 				<div>
+					<a href="./chat.html" class="newtab" target="blank"><img alt="^" src="./images/icons/external.png"/></a>
 					<a href="#" class="closeButton"><img alt="x" src="./images/icons/close.png"/></a>
 					<iframe src="http://webchat.freenode.net?channels=%23HackNC&uio=OT10cnVlJjExPTIyNge7" frameborder=0></iframe>
 				</div>
 			</div>
+			<!--	/Popup windows	-->
+			<!-- 	Icons 	-->
 			<div class="desktopIcons shadow">
 				<a href="#signUp">
 					<div class="icon"title="Hack with us!"/>
@@ -345,7 +354,7 @@
 				<a href="#" id="mentorsLink">
 					<div class="icon" title="Get help"/>
 						<img src="./images/icons/mentors.png" class="image" alt="Mentors" >
-						Help
+						Mentors
 					</div>
 				</a>
 				<a href="#" id="scheduleLink">
@@ -503,21 +512,6 @@
 						</a>
 					</div>
 					<div class="sponsor box">
-						<a href="https://www.digitalocean.com/">
-							<img src="./images/sponsors/digitalocean.png" alt="DigitalOcean" />
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://innovate.unc.edu/">
-							<img src="./images/sponsors/innovate.png" alt="Innovate at Carolina"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://spoon.net/">
-							<img src="./images/sponsors/spoon.png" alt="Spoon.net"/>
-						</a>
-					</div>
-					<div class="sponsor box">
 						<a href="http://www.google.com/">
 							<img src="./images/sponsors/google.png" alt="Google"/>
 						</a>
@@ -527,7 +521,26 @@
 							<img src="./images/sponsors/square.png" alt="Square"/>
 						</a>
 					</div>
-					
+					<div class="sponsor box">
+						<a href="http://innovate.unc.edu/">
+							<img src="./images/sponsors/innovate.png" alt="Innovate at Carolina"/>
+						</a>
+					</div>
+					<div class="sponsor box">
+						<a href="http://passportparking.com/">
+							<img src="./images/sponsors/passportparking.png" alt="Passport Parking"/>
+						</a>
+					</div>
+					<div class="sponsor box">
+						<a href="https://www.digitalocean.com/">
+							<img src="./images/sponsors/digitalocean.png" alt="DigitalOcean" />
+						</a>
+					</div>
+					<div class="sponsor box">
+						<a href="http://spoon.net/">
+							<img src="./images/sponsors/spoon.png" alt="Spoon.net"/>
+						</a>
+					</div>
 					<div class="sponsor box">
 						<a href="http://www.allscripts.com/">
 							<img src="./images/sponsors/allscripts.png" alt="Allscripts"/>
@@ -562,78 +575,10 @@
 					</div>
 					<div class="sponsor box small">
 						<a href="http://www.monsterenergy.com/">
-							<img src="./images/sponsors/monster.png" alt="Cheerwine"/>
-						</a>
-					</div>
-					<div style="text-align: center;">
-						<em>More coming soon...</em>
-					</div>
-				</div>
-				<!--
-				<h2 title="We are eternally grateful">Previous sponsors</h2>
-				<div class="container oldSponsors">
-					<div class="sponsor box">
-						<a href="https://bitpay.com/">
-							<img src="./images/oldSponsors/bitpay.png" alt="BitPay"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://www.emc.com/">
-							<img src="./images/oldSponsors/emc.png" alt="EMC"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://www.google.com/about/">
-							<img src="./images/oldSponsors/google.png" alt="Google"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://www.redventures.com/">
-							<img src="./images/oldSponsors/redventures.png" alt="Red Ventures"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="https://getpebble.com/">
-							<img src="./images/oldSponsors/pebble.png" alt="Pebble"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://www.carolinacreates.unc.edu/">
-							<img src="./images/oldSponsors/carolinacreates.png" alt="Carolina Creates"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://www.kitware.com/">
-							<img src="./images/oldSponsors/kitware.png" alt="Kitware"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="https://www.metlife.com/">
-							<img src="./images/oldSponsors/metlife.png" alt="MetLife"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="https://www.modolabs.com/">
-							<img src="./images/oldSponsors/modoLabs.png" alt="Modo Labs"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://infusion.com/">
-							<img src="./images/oldSponsors/infusion.png" alt="Infusion"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://sendgrid.com/">
-							<img src="./images/oldSponsors/sendgrid.png" alt="SendGrid"/>
-						</a>
-					</div>
-					<div class="sponsor box">
-						<a href="http://innovate.unc.edu/">
-							<img src="./images/oldSponsors/innovateAtCarolina.png" alt="Innovate at Carolina"/>
+							<img src="./images/sponsors/monster.png" alt="Monster Energy"/>
 						</a>
 					</div>
 				</div>
-				-->
 			</div>
 			<div class="fullwidth" id="faq">
 				<h1 title="I'm really only worried about the food">FAQs</h1>
@@ -666,19 +611,6 @@
 						<span class="q">What about sleep?</span>
 						<span class="a">Traditionally, sleep at hackathons comes in the form of a blanket and pillow. There will be a room designated for sleeping during Saturday night if you get tired. If you'd prefer a hotel room, the Carolina Inn is only 200 feet away (although very expensive).</span>
 					</div>
-					<!-- Not relevant anymore
-					<div class="faq box">
-						<span class="q">Will there be a bus for my school?</span>
-						<span class="a">If your school has enough interest, we will make sure that you have free transportation to HackNC.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">I’ve never programmed before.  What’s a php?</span>
-						<span class="a">HackNC, unlike other hackathons, will have lectures, workshops, and many hands-on learning events throughout the entire weekend.  If you want to learn how to program, we've got something for you.</span>
-					</div>
-					<div class="faq box">
-						<span class="q">I’m a programming wizard.  Why should I come?</span>
-						<span class="a">We’ll have tech companies here from all around the country who want to meet you.</span>
-					</div>-->
 					<div class="faq box">
 						<span class="q">What hardware will be provided?</span>
 						<span class="a">We will have Myos, Arduinos, Pebbles, and lots more... Maybe even 3D printing and an Oculus Rift.</span>

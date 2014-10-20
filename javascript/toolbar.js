@@ -147,7 +147,7 @@ Menu.prototype = {
 						$('.standby').fadeIn(function() {
 							animatingNow = false
 							// show sponsors
-							var sponsors = ["mlh.png", "microsoft.png", "emc.png", "codeship.png", "infusion.png", "digitalocean.png", "innovate.png", "spoon.png", "google.png", "square.png",  "allscripts.png", "creditsuisse.png", "nvidia.png", "cheerwine.png", "sparkfun.png"];
+							var sponsors = ["mlh.png", "microsoft.png", "emc.png", "codeship.png", "infusion.png", "digitalocean.png", "innovate.png", "spoon.png", "google.png", "square.png",  "allscripts.png", "creditsuisse.png", "nvidia.png", "cheerwine.png", "sparkfun.png", "mailjet.png", "passportparking.png", "monster.png"];
 							// define a function
 							var i =  0;
 							function loopAnimation() {

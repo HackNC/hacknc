@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   width="1000"
+   height="1000"
+   id="svg2"
+   inkscape:version="0.48.5 r10040"
+   sodipodi:docname="external.svg"
+   inkscape:export-filename="C:\Users\Vance Miller\Documents\GitHub\Fall2014\images\icons\external.png"
+   inkscape:export-xdpi="1.3509288"
+   inkscape:export-ydpi="1.3509288">
+  <metadata
+     id="metadata12">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <defs
+     id="defs10" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1600"
+     inkscape:window-height="847"
+     id="namedview8"
+     showgrid="false"
+     inkscape:zoom="1.6651367"
+     inkscape:cx="671.50976"
+     inkscape:cy="549.61564"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg2" />
+  <path
+     d="m 450,150 0,-100 500,0 0,500 -100,0 L 750,450 450,750 250,550 550,250 450,150 z"
+     style="fill:none;fill-opacity:1;stroke:#191919;stroke-width:100;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;stroke-dashoffset:0"
+     id="path6" />
+  <path
+     style="fill:#000000;fill-opacity:1;stroke-width:72;stroke-linecap:round;stroke-linejoin:bevel;stroke-miterlimit:4;stroke-dasharray:none"
+     d="M 0.6875 300.59375 L 0.6875 649.9375 L 0.6875 999.3125 L 350.0625 999.3125 L 699.40625 999.3125 L 699.40625 785.9375 L 699.40625 572.59375 L 649.9375 622.03125 L 600.5 671.46875 L 600.5 785.9375 L 600.5 900.40625 L 350.0625 900.40625 L 99.59375 900.40625 L 99.59375 649.9375 L 99.59375 399.5 L 214.0625 399.5 L 328.53125 399.5 L 377.96875 350.0625 L 427.40625 300.59375 L 214.0625 300.59375 L 0.6875 300.59375 z "
+     id="path2989" />
+</svg>
