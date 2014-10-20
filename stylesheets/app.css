@@ -102,6 +102,10 @@ body.app {
 	border-bottom: rgb(200,200,200) solid 1px;
 }
 
+.app .schedTime {
+	width: 90px;
+}
+
 .app#food .schedTime {
 	width: 90px;
 }
