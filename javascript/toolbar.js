@@ -207,28 +207,20 @@ Menu.prototype = {
 			}
 		});
 
-		var isDoge = false;
 		$('#dogeify').click(function() {
-			if (isDoge) {
-				// change these elements back to normal
-				$('body').css('font-family', '');
-				$('.toolbar').css('font-family', '');
-				$('.slogan').text("WELCOME TO HACKER COUNTRY");
-				$('#dogeify').delay(100).queue(function(next) {
-					$(this).text('Doge');
-					next();
-				});
-			} else {
-				// change these elements to doge
-				$('body').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
-				$('.toolbar').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
-				$('.slogan').text("WOW HACK. SUCH COUNTRY");
-				$('#dogeify').delay(100).queue(function(next) {
-					$(this).text('Normal');
-					next();
-				});
-			}
-			isDoge = !isDoge;
+			// change these elements to doge
+			$('body').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
+			$('.toolbar').css('font-family', '\'Comic Sans MS\', \'Comic Sans\', \'Chalkboard\', \'Helvetica\', \'Arial\', sans-serif');
+			$('.slogan').text("WOW HACK. SUCH COUNTRY");	
+			var i = 0;
+			$('.icon img').each(function() {
+				$(this).attr("src", "./images/doge/icon/i (" + ++i + ").jpg");
+			});
+			var i = 0;
+			$('.sponsor img').each(function() {
+				$(this).attr("src", "./images/doge/sponsor/s (" + ++i + ").jpg");
+			});
+			$('background img').attr("src", "./images/doge/background.jpg");
 		});
 	}
 }
