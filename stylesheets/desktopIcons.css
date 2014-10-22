@@ -92,6 +92,14 @@
 	max-height: 24em;
 }
 
+.popup > div > div.bar {
+	background-color: rgba(224, 73, 70, 0.8);
+	text-align: right;
+	padding-right: 5px;
+	border-top-right-radius: 2px;
+	border-top-left-radius: 2px;
+}
+
 .popup > div > iframe {
 	width: 100%;
 	height: 100%;
@@ -99,21 +107,13 @@
 }
 
 .popup a.closeButton {
-	float: right;
-	position: relative;
 	height: 15px;
 	width: 15px;
-	top: 15px;
-	right: 5px;
 }
 
 .popup a.newtab {
-	float: left;
-	position: relative;
 	height: 15px;
 	width: 15px;
-	top: 15px;
-	left: 5px;
 }
 
 .mobile .desktopIcons {

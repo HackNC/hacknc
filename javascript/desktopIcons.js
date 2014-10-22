@@ -94,6 +94,18 @@ $('#chatLink').click(function() {
 	}
 });
 
+$('#terminalLink').click(function() {
+	if ($('html').hasClass('mobile')) {
+		document.location = "http://hackertyper.net";
+	} else {
+		if ($('#terminal').is(':visible')) {
+			$('#terminal').hide();
+		} else {
+			$('#terminal').show();
+		}
+	}
+});
+
 // close
 $('.popup').click(function(e) {
 	if (e.target === this) {
