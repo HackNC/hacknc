@@ -106,6 +106,18 @@ $('#terminalLink').click(function() {
 	}
 });
 
+$('#codeshipLink').click(function() {
+	if ($('html').hasClass('mobile')) {
+		document.location = "./codeship.html";
+	} else {
+		if ($('#codeship').is(':visible')) {
+			$('#codeship').hide();
+		} else {
+			$('#codeship').show();
+		}
+	}
+});
+
 // close
 $('.popup').click(function(e) {
 	if (e.target === this) {
