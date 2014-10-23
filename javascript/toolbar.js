@@ -220,7 +220,7 @@ Menu.prototype = {
 			$('.sponsor img').each(function() {
 				$(this).attr("src", "./images/doge/sponsor/s (" + ++i + ").jpg");
 			});
-			$('background img').attr("src", "./images/doge/background.jpg");
+			$('.background').css("background-image", "url('./images/doge/background.jpg')");
 		});
 	}
 }
