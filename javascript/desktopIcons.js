@@ -118,6 +118,18 @@ $('#codeshipLink').click(function() {
 	}
 });
 
+$('#hardwareLink').click(function() {
+	if ($('html').hasClass('mobile')) {
+		document.location = "./hardware.html";
+	} else {
+		if ($('#hardware').is(':visible')) {
+			$('#hardware').hide();
+		} else {
+			$('#hardware').show();
+		}
+	}
+});
+
 // close
 $('.popup').click(function(e) {
 	if (e.target === this) {
