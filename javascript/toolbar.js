@@ -473,8 +473,7 @@ Battery.prototype = {
 
 	setBatteryMenuText: function(now) {
 		var maxCharge = this.getChargeLevel(now);
-		$('.toolbar #battery ul.submenu').append('<li>' +
-			Math.floor((now.getTime() - this.arbitraryStartDate.getTime()) / (this.endDate.getTime() - this.arbitraryStartDate.getTime()) * 100000) / 1000 + '% charged</li>');
+		$('.toolbar #battery ul.submenu').append('<li>100% charged</li>');
 	}
 }
 
